@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programs Viewer</title>
+  <style>
+    :root {
+      --primary-color: #003a92;
+      --light-bg: #f2ede9;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: var(--light-bg);
+      color: #333;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      padding: 1rem;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+    }
+
+    select {
+      padding: 10px;
+      font-size: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    details {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    details summary {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin: 4px 0;
+    }
+
+    .export-button {
+      margin-top: 10px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 0.9rem;
+      }
+
+      select {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav><a href="https://nu.edu"><img width="300px" height="auto" src="img/logo-white.png" alt=""></a>
+  </nav>
+  <div class="container">
+      <h1>Program Data Viewer</h1>
+
+    <label for="program-select">Choose a Program:</label>
+    <select id="program-select">
+      <option value="">-- Select a program --</option>
+    </select>
+
+    <div id="program-details" style="display:none">
+      <details>
+        <summary>General Info</summary>
+        <table id="general-info"></table>
+        <button class="export-button" onclick="exportCSV('general-info', 'general_info.csv')">Export CSV</button>
+      </details>
+
+      <details>
+        <summary>School Info</summary>
+        <table id="school-info"></table>
+        <button class="export-button" onclick="exportCSV('school-info', 'school_info.csv')">Export CSV</button>
+      </details>
+
+      <details>
+        <summary>Area of Study Info</summary>
+        <table id="aos-info"></table>
+        <button class="export-button" onclick="exportCSV('aos-info', 'aos_info.csv')">Export CSV</button>
+      </details>
+
+      <details>
+        <summary>Tuition</summary>
+        <table id="tuition-info"></table>
+        <button class="export-button" onclick="exportCSV('tuition-info', 'tuition_info.csv')">Export CSV</button>
+      </details>
+
+      <details>
+        <summary>Specializations</summary>
+        <table id="spec-info"></table>
+        <button class="export-button" onclick="exportCSV('spec-info', 'specializations.csv')">Export CSV</button>
+      </details>
+
+      <details>
+        <summary>State Restrictions</summary>
+        <ul id="state-info"></ul>
+        <button class="export-button" onclick="exportList('state-info', 'state_restrictions.csv')">Export CSV</button>
+      </details>
+    </div>
+  </div>
+
+  <script>
+    let programs = [];
+
+    async function fetchPrograms() {
+      try {
+        const res = await fetch('http://localhost:3000/nu-api/programs');
+        programs = await res.json();
+        populateDropdown(programs);
+      } catch (err) {
+        alert('Failed to fetch programs');
+        console.error(err);
+      }
+    }
+
+    function populateDropdown(programs) {
+      const select = document.getElementById('program-select');
+      select.innerHTML = '<option value="">-- Select a program --</option>';
+      programs.forEach((program, idx) => {
+        const option = document.createElement('option');
+        option.value = idx;
+        option.textContent = program.EnglishName;
+        select.appendChild(option);
+      });
+
+      select.addEventListener('change', (e) => {
+        const index = e.target.value;
+        if (index !== '') {
+          displayProgramDetails(programs[index]);
+        } else {
+          document.getElementById('program-details').style.display = 'none';
+        }
+      });
+    }
+
+    function buildTable(obj) {
+      return Object.entries(obj).map(([key, value]) => {
+        if (typeof value === 'object' && value !== null) {
+          const nested = Object.entries(value).map(
+            ([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`
+          ).join('');
+          return `<tr><th>${key}</th><td><table>${nested}</table></td></tr>`;
+        } else {
+          return `<tr><th>${key}</th><td>${value ?? ''}</td></tr>`;
+        }
+      }).join('');
+    }
+
+    function displayProgramDetails(program) {
+      document.getElementById('program-details').style.display = 'block';
+
+      const generalInfo = {
+        ProgramID: program.ProgramID,
+        EnglishName: program.EnglishName,
+        SpanishName: program.SpanishName,
+        NUProgramCode: program.NUProgramCode,
+        NCUProgramCode: program.NCUProgramCode,
+        routingTo: program.routingTo,
+        degreeType: program.degreeType,
+        SparkroomCode: program.SparkroomCode,
+        Teachout: program.Teachout,
+        RFIHide: program.RFIHide,
+        AppHide: program.AppHide
+      };
+
+      document.getElementById('general-info').innerHTML = buildTable(generalInfo);
+      document.getElementById('school-info').innerHTML = buildTable(program.SchoolInfo || {});
+      document.getElementById('aos-info').innerHTML = buildTable(program.AreaOfStudyInfo || {});
+
+      const tuition = { ...program.Tuition };
+      const stateLevelTuition = tuition.StateLevelTuition || [];
+      delete tuition.StateLevelTuition;
+      let tuitionHTML = buildTable(tuition);
+      if (stateLevelTuition.length > 0) {
+        const stateTableRows = stateLevelTuition.map(t => `
+          <tr>
+            <td>${t.State}</td>
+            <td>${t.CreditsRequired}</td>
+            <td>${t.CoursesRequired}</td>
+            <td>${t.CostPerCredit}</td>
+            <td>${t.CostPerCourse}</td>
+            <td>${t.TuitionCost}</td>
+            <td>${t.LMF}</td>
+            <td>${t.CMF}</td>
+            <td>${t.TotalProgramCost}</td>
+            <td>${t.Subscription}</td>
+          </tr>
+        `).join('');
+
+        tuitionHTML += `
+          <h3>State Level Tuition</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>State</th>
+                <th>CreditsRequired</th>
+                <th>CoursesRequired</th>
+                <th>CostPerCredit</th>
+                <th>CostPerCourse</th>
+                <th>TuitionCost</th>
+                <th>LMF</th>
+                <th>CMF</th>
+                <th>TotalProgramCost</th>
+                <th>Subscription</th>
+              </tr>
+            </thead>
+            <tbody>${stateTableRows}</tbody>
+          </table>`;
+      }
+      document.getElementById('tuition-info').innerHTML = tuitionHTML;
+
+      const specs = program.Specializations || [];
+      document.getElementById('spec-info').innerHTML = specs.length
+        ? `
+          <thead>
+            <tr><th>Name</th><th>Route</th><th>Sparkroom</th><th>App Hide</th><th>RFI Hide</th></tr>
+          </thead>
+          <tbody>
+            ${specs.map(spec => `
+              <tr>
+                <td>${spec.EnglishName}</td>
+                <td>${spec.routeTo}</td>
+                <td>${spec.SparkroomCode}</td>
+                <td>${spec.AppHide}</td>
+                <td>${spec.RFIHide}</td>
+              </tr>
+            `).join('')}
+          </tbody>`
+        : '<tr><td colspan="5">No specializations available</td></tr>';
+
+      const states = program.StateRestrictions || [];
+      document.getElementById('state-info').innerHTML = states.length
+        ? states.map(state => `<li>${state}</li>`).join('')
+        : '<li>No restrictions</li>';
+    }
+
+    function exportCSV(tableId, filename) {
+      const table = document.getElementById(tableId);
+      const rows = [...table.querySelectorAll('tr')];
+      const csv = rows.map(row => [...row.querySelectorAll('th,td')].map(cell => `"${cell.innerText}"`).join(',')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function exportList(listId, filename) {
+      const list = document.getElementById(listId);
+      const items = [...list.querySelectorAll('li')];
+      const csv = items.map(item => `"${item.innerText}"`).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    fetchPrograms();
+  </script>
+</body>
+</html>

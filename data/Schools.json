@@ -1,0 +1,74 @@
+[
+    {
+        "SchoolID": 1,
+        "School": "School of Arts, Letters, and Sciences",
+        "WD_SchoolCODE": "NU_SOALS",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "SchoolID": 2,
+        "School": "School of Business and Economics",
+        "WD_SchoolCODE": "NU_SOBE",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "SchoolID": 3,
+        "School": "School of Technology and Engineering",
+        "WD_SchoolCODE": "NU_SOTE",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "SchoolID": 4,
+        "School": "School of Health Professions",
+        "WD_SchoolCODE": "NU_SOHP",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "SchoolID": 5,
+        "School": "College of Law and Public Service",
+        "WD_SchoolCODE": "NU_COLPS",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "SchoolID": 6,
+        "School": "School of Psychology and Social Sciences (JFK)",
+        "WD_SchoolCODE": "NU_SOPSS",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "SchoolID": 7,
+        "School": "Sanford College of Education",
+        "WD_SchoolCODE": "NU_SCOE",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "SchoolID": 8,
+        "School": "WES PACE",
+        "WD_SchoolCODE": null,
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "May, 04 2023 13:20:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    }
+]

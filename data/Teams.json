@@ -1,0 +1,18 @@
+[
+    {
+        "teamID": 1,
+        "designatedTeam": "Online Region",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "teamID": 2,
+        "designatedTeam": "Education",
+        "CreatedBy": "022793537",
+        "CreatedDatetime": "September, 28 2022 09:00:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "degreeTypeID": 1,
+        "degreeType": "Certificate",
+        "routeTo": "NU",
+        "degreeLevel": "CT",
+        "label": "Certificate",
+        "displayOrder": 5,
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "degreeTypeID": 2,
+        "degreeType": "Credential",
+        "routeTo": "NU",
+        "degreeLevel": "CR",
+        "label": "Credential",
+        "displayOrder": 6,
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "degreeTypeID": 3,
+        "degreeType": "Associate",
+        "routeTo": "NU",
+        "degreeLevel": "AS",
+        "label": "Associate",
+        "displayOrder": 4,
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "degreeTypeID": 4,
+        "degreeType": "Bachelor",
+        "routeTo": "NU",
+        "degreeLevel": "BA",
+        "label": "Bachelor",
+        "displayOrder": 3,
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "degreeTypeID": 5,
+        "degreeType": "Master",
+        "routeTo": "NCU",
+        "degreeLevel": "MA",
+        "label": "Master",
+        "displayOrder": 2,
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "degreeTypeID": 6,
+        "degreeType": "Doctoral",
+        "routeTo": "NCU",
+        "degreeLevel": "DR",
+        "label": "Doctoral",
+        "displayOrder": 1,
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    }
+]

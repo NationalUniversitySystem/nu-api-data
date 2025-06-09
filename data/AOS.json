@@ -1,0 +1,92 @@
+[
+    {
+        "AreaOfStudyID": 1,
+        "AreaOfStudy": "Arts & Humanities",
+        "AcadIntCode": "ARTS&HUMANITIES",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 2,
+        "AreaOfStudy": "Business & Marketing",
+        "AcadIntCode": "BUSINESS&MARKETING",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 3,
+        "AreaOfStudy": "Criminal Justice & Public Service",
+        "AcadIntCode": "CRIMINALJUSTICE",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 4,
+        "AreaOfStudy": "Engineering & Technology",
+        "AcadIntCode": "ENGINEERING&TECH",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 5,
+        "AreaOfStudy": "Healthcare & Nursing",
+        "AcadIntCode": "HEALTHCARE&NURSING",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 6,
+        "AreaOfStudy": "Science & Math",
+        "AcadIntCode": "SCIENCE&MATH",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 7,
+        "AreaOfStudy": "Social Sciences & Psychology",
+        "AcadIntCode": "SOCIALSCI&PSYCH",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 8,
+        "AreaOfStudy": "Teaching & Education",
+        "AcadIntCode": "TEACHING&EDUCATION",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "October, 24 2022 14:45:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    },
+    {
+        "AreaOfStudyID": 9,
+        "AreaOfStudy": "Law",
+        "AcadIntCode": "LAW",
+        "spanishTitle": null,
+        "CreatedBy": "22793537",
+        "CreatedDatetime": "September, 08 2023 09:20:00",
+        "ModifiedBy": null,
+        "ModifiedDatetime": null
+    }
+]
