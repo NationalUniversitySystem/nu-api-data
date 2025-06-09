@@ -143,16 +143,17 @@
       </details>
 
       <details>
+        <summary>State Restrictions</summary>
+        <ul id="state-info"></ul>
+        <button class="export-button" onclick="exportList('state-info', 'state_restrictions.csv')">Export CSV</button>
+      </details>
+
+      <details>
         <summary>Specializations</summary>
         <table id="spec-info"></table>
         <button class="export-button" onclick="exportCSV('spec-info', 'specializations.csv')">Export CSV</button>
       </details>
 
-      <details>
-        <summary>State Restrictions</summary>
-        <ul id="state-info"></ul>
-        <button class="export-button" onclick="exportList('state-info', 'state_restrictions.csv')">Export CSV</button>
-      </details>
     </div>
   </div>
 
@@ -170,25 +171,31 @@
       }
     }
 
-    function populateDropdown(programs) {
-      const select = document.getElementById('program-select');
-      select.innerHTML = '<option value="">-- Select a program --</option>';
-      programs.forEach((program, idx) => {
-        const option = document.createElement('option');
-        option.value = idx;
-        option.textContent = program.EnglishName;
-        select.appendChild(option);
-      });
+function populateDropdown(programs) {
+  const select = document.getElementById('program-select');
+  select.innerHTML = '<option value="">-- Select a program --</option>';
 
-      select.addEventListener('change', (e) => {
-        const index = e.target.value;
-        if (index !== '') {
-          displayProgramDetails(programs[index]);
-        } else {
-          document.getElementById('program-details').style.display = 'none';
-        }
-      });
+  const visiblePrograms = programs
+    .filter(p => !(p.AppHide === true && p.RFIHide === true))
+    .sort((a, b) => a.EnglishName.localeCompare(b.EnglishName));
+
+  visiblePrograms.forEach((program, idx) => {
+    const option = document.createElement('option');
+    option.value = idx;
+    option.textContent = program.EnglishName;
+    select.appendChild(option);
+  });
+
+  select.addEventListener('change', (e) => {
+    const index = e.target.value;
+    if (index !== '') {
+      displayProgramDetails(visiblePrograms[index]);
+    } else {
+      document.getElementById('program-details').style.display = 'none';
     }
+  });
+}
+
 
     function buildTable(obj) {
       return Object.entries(obj).map(([key, value]) => {

@@ -35,10 +35,10 @@ app.get('/nu-api/programs', async (req, res) => {
     );
 
     const areaOfStudyMap = Object.fromEntries(
-      areasOfStudy.map(aos => [aos.areaofstudyid, {
-        EnglishAOS: aos.areaofstudy || "",
+      areasOfStudy.map(aos => [aos.AreaOfStudyID, {
+        EnglishAOS: aos.AreaOfStudy || "",
         SpanishAOS: aos.spanishTitle || "",
-        AcadIntCode: aos.acadIntCode || ""
+        AcadIntCode: aos.AcadIntCode || ""
       }])
     );
 
