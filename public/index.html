@@ -94,7 +94,7 @@
 <body>
   <nav>
     <a href="https://nu.edu">
-      <img width="300px" height="auto" src="img/logo-white.png" alt="" />
+      <img width="300px" height="auto" src="/img/logo-white.png" alt="" />
     </a>
   </nav>
   <div class="container">
@@ -221,22 +221,35 @@
       const tuition = { ...program.Tuition };
       const stateLevelTuition = tuition.StateLevelTuition || [];
       delete tuition.StateLevelTuition;
+
+      [
+  'CostPerCredit',
+  'CostPerCourse',
+  'TuitionCost',
+  'LMF',
+  'CMF',
+  'TotalProgramCost'
+].forEach(key => {
+  if (tuition[key]) tuition[key] = formatCurrency(tuition[key]);
+});
+
       let tuitionHTML = buildTable(tuition);
       if (stateLevelTuition.length > 0) {
         const stateTableRows = stateLevelTuition.map(t => `
-          <tr>
-            <td>${t.State}</td>
-            <td>${t.CreditsRequired}</td>
-            <td>${t.CoursesRequired}</td>
-            <td>${t.CostPerCredit}</td>
-            <td>${t.CostPerCourse}</td>
-            <td>${t.TuitionCost}</td>
-            <td>${t.LMF}</td>
-            <td>${t.CMF}</td>
-            <td>${t.TotalProgramCost}</td>
-            <td>${t.Subscription}</td>
-          </tr>
-        `).join('');
+  <tr>
+    <td>${t.State}</td>
+    <td>${t.CreditsRequired}</td>
+    <td>${t.CoursesRequired}</td>
+    <td>${formatCurrency(t.CostPerCredit)}</td>
+    <td>${formatCurrency(t.CostPerCourse)}</td>
+    <td>${formatCurrency(t.TuitionCost)}</td>
+    <td>${formatCurrency(t.LMF)}</td>
+    <td>${formatCurrency(t.CMF)}</td>
+    <td>${formatCurrency(t.TotalProgramCost)}</td>
+    <td>${t.Subscription}</td>
+  </tr>
+`).join('');
+
 
         tuitionHTML += `
           <h3>State Level Tuition</h3>
@@ -284,6 +297,12 @@
         ? states.map(state => `<li>${state}</li>`).join('')
         : '<li>No restrictions</li>';
     }
+
+    function formatCurrency(value) {
+  const num = parseFloat(value);
+  return isNaN(num) ? value : num.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+}
+
 
     function exportCSV(tableId, filename) {
       const table = document.getElementById(tableId);
