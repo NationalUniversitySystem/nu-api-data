@@ -59,6 +59,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'nu-api-data'
-          slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6A36F2D2257D480FB2D1B3CCD6C47C72 }}
