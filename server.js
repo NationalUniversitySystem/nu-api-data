@@ -1,18 +1,19 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-const readJson = (filename) =>
-  JSON.parse(fs.readFileSync(path.join(__dirname, 'data', filename), 'utf8'));
+// Serve frontend static files from /public
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(cors());
-
+// Your existing API route (unchanged)
 app.get('/nu-api/programs', async (req, res) => {
   try {
+    const readJson = (filename) =>
+      JSON.parse(fs.readFileSync(path.join(__dirname, 'data', filename), 'utf8'));
+
     const programs = readJson('Programs.json');
     const schools = readJson('Schools.json');
     const degreeTypes = readJson('Degree.json');
@@ -144,6 +145,11 @@ app.get('/nu-api/programs', async (req, res) => {
     console.error('Error building program data:', error);
     res.status(500).json({ error: 'Failed to load program data' });
   }
+});
+
+// Serve index.html for all other routes (SPA fallback)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
