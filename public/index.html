@@ -3,128 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <title>Programs Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    :root {
-      --primary-color: #003a92;
-      --light-bg: #f2ede9;
-      --card-bg: #ffffff;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: var(--light-bg);
-      color: #333;
-    }
-    nav {
-      background-color: var(--primary-color);
-      padding: 1rem;
-      color: white;
-      font-weight: bold;
-      font-size: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  :root {
+    --primary-color: #003a92;
+    --light-bg: #f2ede9;
+    --card-bg: #ffffff;
+    --accent-color: #e5e5e5;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--light-bg);
+    color: #333;
+  }
+
+  nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .container {
+    
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    display: block;
+    margin: 1rem 0 0.25rem;
+    font-weight: bold;
+  }
+
+  .search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+
+  input[type="text"]:focus,
+  select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+
+  .dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: none;
+    border-radius: 4px;
+  }
+
+  .dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .dropdown-list li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .export-button {
+    margin-top: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .export-button:hover {
+    background-color: #002d6c;
+  }
+
+  details {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  details summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+  }
+
+  th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin: 4px 0;
+  }
+
+  @media (max-width: 600px) {
     .container {
-      padding: 20px;
-    }
-    h1 {
-      color: var(--primary-color);
-    }
-    #program-search,
-    #program-select {
-      margin-top: 0.5rem;
-      width: 100%;
-      max-width: 500px;
-      font-size: 1rem;
       padding: 10px;
     }
+
     .dropdown-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      max-height: 200px;
-      overflow-y: auto;
-      border: 1px solid #ccc;
-      max-width: 500px;
-      width: 100%;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: absolute;
-      z-index: 1000;
-      display: none;
+      font-size: 0.95rem;
+      max-height: 250px;
     }
-    .dropdown-list li {
-      padding: 10px;
-      cursor: pointer;
+
+    input[type="text"],
+    select {
+      font-size: 1rem;
     }
-    .dropdown-list li:hover {
-      background-color: #f0f0f0;
+
+    table,
+    th,
+    td {
+      font-size: 0.85rem;
     }
-    details {
-      background: var(--card-bg);
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    details summary {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: var(--primary-color);
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    th, td {
-      padding: 8px;
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-    th {
-      background-color: var(--primary-color);
-      color: white;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin: 4px 0;
-    }
-    .export-button {
-      margin-top: 10px;
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    @media (max-width: 600px) {
-      table, th, td, select {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
   <nav>
     <a href="https://nu.edu">
-      <img width="300px" height="auto" src="/img/logo-white.png" alt="National University logo" />
+      <img src="/img/logo-white.png" alt="National University logo" />
     </a>
   </nav>
+
   <div class="container">
     <h1>Program Data Viewer</h1>
 
-    <label for="program-search">Search for a Program:</label>
-    <input type="text" id="program-search" placeholder="Start typing to search..." autocomplete="off" />
-    <ul id="program-dropdown" class="dropdown-list"></ul>
-    <select id="program-select" size="5" style="display: none;"></select>
+    <!-- Typeahead Search -->
+    <!-- Typeahead Search -->
+<label for="program-search">Search for a Program:</label>
+<div class="search-wrapper">
+  <input type="text" id="program-search" placeholder="Start typing to search..." autocomplete="off" />
+  <ul id="program-dropdown" class="dropdown-list"></ul>
+</div>
+<select id="program-select" size="5" style="display: none;"></select>
 
+
+    <!-- Static Dropdown -->
+    <label  for="program-static-select">Or choose from the list:</label>
+    <select style="margin-bottom: 20px;" id="program-static-select">
+      <option value="">Select a program...</option>
+    </select>
+
+    <!-- Program Details -->
     <div id="program-details" style="display:none">
       <details>
         <summary>General Info</summary>
@@ -181,6 +263,16 @@
       const visiblePrograms = programs
         .filter(p => !(p.AppHide === true && p.RFIHide === true))
         .sort((a, b) => a.EnglishName.localeCompare(b.EnglishName));
+
+        const staticSelect = document.getElementById('program-static-select');
+staticSelect.innerHTML = '<option value="">Select a program...</option>';
+visiblePrograms.forEach(program => {
+  const option = document.createElement('option');
+  option.value = program.ProgramID;
+  option.textContent = program.EnglishName;
+  staticSelect.appendChild(option);
+});
+
 
       function updateDropdown(query = '') {
         dropdown.innerHTML = '';
@@ -259,6 +351,22 @@
         displayProgramDetails(program);
       }
     });
+
+    document.getElementById('program-static-select').addEventListener('change', () => {
+  const select = document.getElementById('program-static-select');
+  const programId = select.value;
+
+  const program = programs.find(p =>
+    p.ProgramID == programId && !(p.AppHide === true && p.RFIHide === true)
+  );
+
+  if (program) {
+    const input = document.getElementById('program-search');
+    input.value = program.EnglishName;
+    displayProgramDetails(program);
+  }
+});
+
 
     function buildTable(obj) {
       return Object.entries(obj).map(([key, value]) => {
