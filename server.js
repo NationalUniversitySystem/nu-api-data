@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3000;
 // Serve frontend static files from /public
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Your existing API route (unchanged)
 app.get('/nu-api/programs', async (req, res) => {
   try {
     const readJson = (filename) =>
@@ -52,12 +51,36 @@ app.get('/nu-api/programs', async (req, res) => {
     });
 
     const tuitionByProgram = tuitions.filter(t => t.State === null && t.Specialization === null)
-                                     .reduce((acc, t) => {
-      acc[Number(t.ProgramID)] = t;
-      return acc;
-    }, {});
+      .reduce((acc, t) => {
+        acc[Number(t.ProgramID)] = t;
+        return acc;
+      }, {});
 
-    const stateLevelTuitions = tuitions.filter(t => t.State !== null);
+    const stateLevelTuitions = tuitions.filter(t => t.State !== null && t.Specialization === null);
+
+    const specializationTuitions = tuitions.filter(t => t.Specialization !== null)
+      .reduce((acc, t) => {
+        const programID = t.ProgramID;
+        const specialization = t.Specialization;
+
+        if (!acc[programID]) acc[programID] = {};
+        if (!acc[programID][specialization]) acc[programID][specialization] = [];
+
+        acc[programID][specialization].push({
+          State: t.State,
+          CreditsRequired: t.CreditsRequired || 0,
+          CoursesRequired: t.CoursesRequired || 0,
+          CostPerCredit: t.CostPerCredit || 0,
+          CostPerCourse: t.CostPerCourse || 0,
+          TuitionCost: t.TuitionCost || 0,
+          LMF: t.LMF || 0,
+          CMF: t.CMF || 0,
+          TotalProgramCost: t.TotalProgramCost || 0,
+          Subscription: t.Subscription || false
+        });
+
+        return acc;
+      }, {});
 
     const specByProgram = specializations.reduce((acc, spec) => {
       const programID = spec.programID;
@@ -70,7 +93,7 @@ app.get('/nu-api/programs', async (req, res) => {
         AppHide: spec.AppHide ?? false,
         RFIHide: spec.RFIHide ?? false,
         AdditionalStateRestriction: false,
-        AdditionalStateLevelTuition: false
+        AdditionalStateLevelTuition: [] // updated to array
       });
       return acc;
     }, {});
@@ -83,6 +106,7 @@ app.get('/nu-api/programs', async (req, res) => {
 
     const finalData = programs.map(p => {
       const tuition = tuitionByProgram[Number(p.ProgramID)] || {};
+
       const programStateTuitions = stateLevelTuitions
         .filter(t => Number(t.ProgramID) === p.ProgramID)
         .map(t => ({
@@ -97,6 +121,14 @@ app.get('/nu-api/programs', async (req, res) => {
           TotalProgramCost: t.TotalProgramCost || 0,
           Subscription: t.Subscription || false
         }));
+
+      const specs = specByProgram[p.ProgramID] || [];
+
+      // Append AdditionalStateLevelTuition to each specialization
+      specs.forEach(spec => {
+        const specTuitionData = specializationTuitions[p.ProgramID]?.[spec.EnglishName] || [];
+        spec.AdditionalStateLevelTuition = specTuitionData;
+      });
 
       return {
         ProgramID: p.ProgramID,
@@ -136,7 +168,7 @@ app.get('/nu-api/programs', async (req, res) => {
           StateLevelTuition: programStateTuitions
         },
         StateRestrictions: restrictionsByProgram[p.ProgramID] || [],
-        Specializations: specByProgram[p.ProgramID] || []
+        Specializations: specs
       };
     });
 
@@ -147,7 +179,7 @@ app.get('/nu-api/programs', async (req, res) => {
   }
 });
 
-// Serve index.html for all other routes (SPA fallback)
+// SPA fallback
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });

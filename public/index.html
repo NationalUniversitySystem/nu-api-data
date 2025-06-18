@@ -90,6 +90,12 @@
     border-radius: 4px;
   }
 
+  details summary:hover {
+  color: #002d6c;
+  text-decoration: underline;
+}
+
+
   .dropdown-list li {
     padding: 10px;
     cursor: pointer;
@@ -199,7 +205,6 @@
 </div>
 <select id="program-select" size="5" style="display: none;"></select>
 
-
     <!-- Static Dropdown -->
     <label  for="program-static-select">Or choose from the list:</label>
     <select style="margin-bottom: 20px;" id="program-static-select">
@@ -265,13 +270,13 @@
         .sort((a, b) => a.EnglishName.localeCompare(b.EnglishName));
 
         const staticSelect = document.getElementById('program-static-select');
-staticSelect.innerHTML = '<option value="">Select a program...</option>';
-visiblePrograms.forEach(program => {
-  const option = document.createElement('option');
-  option.value = program.ProgramID;
-  option.textContent = program.EnglishName;
-  staticSelect.appendChild(option);
-});
+        staticSelect.innerHTML = '<option value="">Select a program...</option>';
+        visiblePrograms.forEach(program => {
+          const option = document.createElement('option');
+          option.value = program.ProgramID;
+          option.textContent = program.EnglishName;
+          staticSelect.appendChild(option);
+        });
 
 
       function updateDropdown(query = '') {
@@ -451,28 +456,81 @@ visiblePrograms.forEach(program => {
 
       document.getElementById('tuition-info').innerHTML = tuitionHTML;
 
-      const specs = program.Specializations || [];
-      document.getElementById('spec-info').innerHTML = specs.length
-        ? `<thead>
-            <tr><th>Name</th><th>Route</th><th>Sparkroom</th><th>App Hide</th><th>RFI Hide</th></tr>
-          </thead>
-          <tbody>
-            ${specs.map(spec => `
-              <tr>
-                <td>${spec.EnglishName}</td>
-                <td>${spec.routeTo}</td>
-                <td>${spec.SparkroomCode}</td>
-                <td>${spec.AppHide}</td>
-                <td>${spec.RFIHide}</td>
-              </tr>
-            `).join('')}
-          </tbody>`
-        : '<tr><td colspan="5">No specializations available</td></tr>';
+     const specs = program.Specializations || [];
+document.getElementById('spec-info').innerHTML = specs.length
+  ? `<thead>
+      <tr>
+        <th>Name</th>
+        <th>Route</th>
+        <th>Sparkroom</th>
+        <th>App Hide</th>
+        <th>RFI Hide</th>
+        <th>Additional Tuition</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${specs.map(spec => {
+        const additionalTuition = Array.isArray(spec.AdditionalStateLevelTuition) && spec.AdditionalStateLevelTuition.length > 0
+          ? `
+            <details>
+              <summary style="cursor:pointer; color:#003a92; font-weight:normal; margin-top: 6px;">View Additional Tuition</summary>
+              <table style="margin-top:10px;">
+                <thead>
+                  <tr>
+                    <th>State</th>
+                    <th>CreditsRequired</th>
+                    <th>CoursesRequired</th>
+                    <th>CostPerCredit</th>
+                    <th>CostPerCourse</th>
+                    <th>TuitionCost</th>
+                    <th>LMF</th>
+                    <th>CMF</th>
+                    <th>TotalProgramCost</th>
+                    <th>Subscription</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${spec.AdditionalStateLevelTuition.map(t => `
+                    <tr>
+                      <td>${t.State}</td>
+                      <td>${t.CreditsRequired}</td>
+                      <td>${t.CoursesRequired}</td>
+                      <td>${formatCurrency(t.CostPerCredit)}</td>
+                      <td>${formatCurrency(t.CostPerCourse)}</td>
+                      <td>${formatCurrency(t.TuitionCost)}</td>
+                      <td>${formatCurrency(t.LMF)}</td>
+                      <td>${formatCurrency(t.CMF)}</td>
+                      <td>${formatCurrency(t.TotalProgramCost)}</td>
+                      <td>${t.Subscription}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </details>
+          `
+          : '—';
+
+        return `
+          <tr>
+            <td>${spec.EnglishName}</td>
+            <td>${spec.routeTo}</td>
+            <td>${spec.SparkroomCode}</td>
+            <td>${spec.AppHide}</td>
+            <td>${spec.RFIHide}</td>
+            <td>${additionalTuition}</td>
+          </tr>`;
+      }).join('')}
+    </tbody>`
+  : '<tr><td colspan="6">No specializations available</td></tr>';
+
+
 
       const states = program.StateRestrictions || [];
-      document.getElementById('state-info').innerHTML = states.length
-        ? states.map(state => `<li>${state}</li>`).join('')
-        : '<li>No restrictions</li>';
+const uniqueStates = [...new Set(states)];  // Remove duplicates
+document.getElementById('state-info').innerHTML = uniqueStates.length
+  ? uniqueStates.map(state => `<li>${state}</li>`).join('')
+  : '<li>No restrictions</li>';
+
     }
 
     function formatCurrency(value) {
