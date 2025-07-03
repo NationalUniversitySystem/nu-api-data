@@ -400,8 +400,13 @@
         SparkroomCode: program.SparkroomCode,
         Teachout: program.Teachout,
         RFIHide: program.RFIHide,
-        AppHide: program.AppHide
+        AppHide: program.AppHide,
+        urlID: program.urlID,
+        url: program.url,
+        supplierID: program.supplierID
       };
+
+
 
       document.getElementById('general-info').innerHTML = buildTable(generalInfo);
       document.getElementById('school-info').innerHTML = buildTable(program.SchoolInfo || {});
@@ -459,15 +464,16 @@
      const specs = program.Specializations || [];
 document.getElementById('spec-info').innerHTML = specs.length
   ? `<thead>
-      <tr>
-        <th>Name</th>
-        <th>Route</th>
-        <th>Sparkroom</th>
-        <th>App Hide</th>
-        <th>RFI Hide</th>
-        <th>Additional Tuition</th>
-      </tr>
-    </thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Route</th>
+          <th>Sparkroom</th>
+          <th>App Hide</th>
+          <th>RFI Hide</th>
+          <th>Additional Tuition</th>
+        </tr>
+      </thead>
     <tbody>
       ${specs.map(spec => {
         const additionalTuition = Array.isArray(spec.AdditionalStateLevelTuition) && spec.AdditionalStateLevelTuition.length > 0
@@ -512,6 +518,7 @@ document.getElementById('spec-info').innerHTML = specs.length
 
         return `
           <tr>
+            <td>${spec.SpecializationID}</td>
             <td>${spec.EnglishName}</td>
             <td>${spec.routeTo}</td>
             <td>${spec.SparkroomCode}</td>
@@ -519,6 +526,7 @@ document.getElementById('spec-info').innerHTML = specs.length
             <td>${spec.RFIHide}</td>
             <td>${additionalTuition}</td>
           </tr>`;
+
       }).join('')}
     </tbody>`
   : '<tr><td colspan="6">No specializations available</td></tr>';

@@ -5,7 +5,6 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve frontend static files from /public
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/nu-api/programs', async (req, res) => {
@@ -23,7 +22,10 @@ app.get('/nu-api/programs', async (req, res) => {
     const areasOfStudy = readJson('AOS.json');
 
     const degreeTypeMap = Object.fromEntries(
-      degreeTypes.map(dt => [dt.degreeTypeID, dt.degreeType])
+      degreeTypes.map(dt => [dt.degreeTypeID, {
+        degreeTypeID: dt.degreeTypeID,
+        degreeType: dt.degreeType
+      }])
     );
 
     const schoolMap = Object.fromEntries(
@@ -36,6 +38,7 @@ app.get('/nu-api/programs', async (req, res) => {
 
     const areaOfStudyMap = Object.fromEntries(
       areasOfStudy.map(aos => [aos.AreaOfStudyID, {
+        AreaOfStudyID: aos.AreaOfStudyID,
         EnglishAOS: aos.AreaOfStudy || "",
         SpanishAOS: aos.spanishTitle || "",
         AcadIntCode: aos.AcadIntCode || ""
@@ -85,7 +88,9 @@ app.get('/nu-api/programs', async (req, res) => {
     const specByProgram = specializations.reduce((acc, spec) => {
       const programID = spec.programID;
       if (!acc[programID]) acc[programID] = [];
+
       acc[programID].push({
+        SpecializationID: spec.specializationID || null,
         EnglishName: spec.specialization || "",
         SpanishName: spec.spanishTitle || "",
         routeTo: spec.routingTo || "",
@@ -93,8 +98,9 @@ app.get('/nu-api/programs', async (req, res) => {
         AppHide: spec.AppHide ?? false,
         RFIHide: spec.RFIHide ?? false,
         AdditionalStateRestriction: false,
-        AdditionalStateLevelTuition: [] // updated to array
+        AdditionalStateLevelTuition: []
       });
+
       return acc;
     }, {});
 
@@ -123,8 +129,6 @@ app.get('/nu-api/programs', async (req, res) => {
         }));
 
       const specs = specByProgram[p.ProgramID] || [];
-
-      // Append AdditionalStateLevelTuition to each specialization
       specs.forEach(spec => {
         const specTuitionData = specializationTuitions[p.ProgramID]?.[spec.EnglishName] || [];
         spec.AdditionalStateLevelTuition = specTuitionData;
@@ -137,7 +141,10 @@ app.get('/nu-api/programs', async (req, res) => {
         NCUProgramCode: p.NCUProgramCode || "",
         NUProgramCode: p.NUProgramCode || "",
         routingTo: p.routingTo || "",
-        degreeType: degreeTypeMap[p.degreeTypeID] || "",
+        degreeType: degreeTypeMap[p.degreeTypeID] || {
+          degreeTypeID: p.degreeTypeID || null,
+          degreeType: ""
+        },
         SparkroomCode: p.SparkroomCode || "",
         RFIHide: p.RFIHide ?? false,
         AppHide: p.AppHide ?? false,
@@ -151,6 +158,7 @@ app.get('/nu-api/programs', async (req, res) => {
           WD_SchoolCODE: ""
         },
         AreaOfStudyInfo: programAOSMap[p.ProgramID]?.[0] || {
+          AreaOfStudyID: null,
           EnglishAOS: "",
           SpanishAOS: "",
           AcadIntCode: ""
@@ -179,11 +187,10 @@ app.get('/nu-api/programs', async (req, res) => {
   }
 });
 
-// SPA fallback
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ Server is running on http://localhost:${PORT}`);
+  console.log(`\u2705 Server is running on http://localhost:${PORT}`);
 });
