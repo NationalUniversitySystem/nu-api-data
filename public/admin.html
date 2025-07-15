@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="https://nu.edu">
+            <img src="/img/logo-white.png" alt="National University logo" />
+        </a>
+    </nav>
+
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+
+        <p id="message" class="status"></p>
+
+
+        <div class="timestamps">
+            <div class="card timestamp-card">
+                <h2>Last Sync Time</h2>
+                <p id="sync-timestamp">—</p>
+            </div>
+
+            <div class="card timestamp-card">
+                <h2>Last Rollback Time</h2>
+                <p id="rollback-timestamp">—</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Actions</h2>
+            <button id="syncBtn">Sync Now</button>
+            <!-- Was:  <button id="rollbackBtn">Rollback</button> -->
+            <button id="rollbackBtn" type="button">Rollback</button>
+
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+
+
+</body>
+
+</html>

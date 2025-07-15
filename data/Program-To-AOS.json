@@ -172,7 +172,7 @@
     },
     {
         "pgmaos_id": 32,
-        "programid": 85,
+        "programid": 419,
         "areaofstudyid": 1,
         "createdby": "022793537",
         "createdDateTime": "September, 28 2022 09:00:00",
@@ -181,7 +181,7 @@
     },
     {
         "pgmaos_id": 33,
-        "programid": 85,
+        "programid": 419,
         "areaofstudyid": 7,
         "createdby": "022793537",
         "createdDateTime": "September, 28 2022 09:00:00",
@@ -217,7 +217,7 @@
     },
     {
         "pgmaos_id": 37,
-        "programid": 189,
+        "programid": 420,
         "areaofstudyid": 1,
         "createdby": "022793537",
         "createdDateTime": "September, 28 2022 09:00:00",
@@ -226,7 +226,7 @@
     },
     {
         "pgmaos_id": 38,
-        "programid": 189,
+        "programid": 420,
         "areaofstudyid": 7,
         "createdby": "022793537",
         "createdDateTime": "September, 28 2022 09:00:00",
@@ -235,7 +235,7 @@
     },
     {
         "pgmaos_id": 39,
-        "programid": 189,
+        "programid": 420,
         "areaofstudyid": 8,
         "createdby": "022793537",
         "createdDateTime": "September, 28 2022 09:00:00",
@@ -3900,15 +3900,6 @@
         "pgmaos_id": 511,
         "programid": 81,
         "areaofstudyid": 8,
-        "createdby": "022793537",
-        "createdDateTime": "February, 19 2025 15:30:00",
-        "modifiedby": null,
-        "modifieddatetime": null
-    },
-    {
-        "pgmaos_id": 512,
-        "programid": 85,
-        "areaofstudyid": 1,
         "createdby": "022793537",
         "createdDateTime": "February, 19 2025 15:30:00",
         "modifiedby": null,
