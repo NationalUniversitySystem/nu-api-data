@@ -139,12 +139,7 @@ app.get('/nu-api/programs', async (req, res) => {
                   WD_SchoolCODE: ""
               },
 
-                AreaOfStudyInfo: programAOSMap[p.ProgramID]?.[0] || {
-                    AreaOfStudyID: null,
-                    EnglishAOS: "",
-                    SpanishAOS: "",
-                    AcadIntCode: ""
-                },
+               AreaOfStudyInfo: programAOSMap[p.ProgramID]?.[0] ?? null,
                 Tuition: {
                     CreditsRequired: tuition.CreditsRequired || 0,
                     CoursesRequired: tuition.CoursesRequired || 0,
