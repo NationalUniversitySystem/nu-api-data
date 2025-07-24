@@ -1,76 +1,102 @@
-:root {
-      --primary-color: #003a92;
-      --light-bg: #f2ede9;
-      --card-bg: #ffffff;
-      --accent-color: #e5e5e5;
-    }
+ :root {
+            --primary-color: #003a92;
+            --light-bg: #f2ede9;
+            --card-bg: #ffffff;
+            --accent-color: #e5e5e5;
+        }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--light-bg);
-      color: #333;
-    }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+        }
 
-    nav {
-      background-color: var(--primary-color);
-      padding: 1rem;
-      text-align: center;
-    }
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            text-align: center;
+        }
 
-    nav img {
-      max-width: 90%;
-      height: auto;
-    }
+        nav img {
+            max-width: 90%;
+            height: auto;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
 
-    h1 {
-      text-align: center;
-      color: var(--primary-color);
-      margin-bottom: 2rem;
-    }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
 
-    .card {
-      background: var(--card-bg);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
 
-    .card h2 {
-      color: var(--primary-color);
-      margin-top: 0;
-    }
+        .card h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
 
-    .card p {
-      margin: 10px 0;
-    }
+        .card p {
+            margin: 10px 0;
+        }
 
-    button {
-      background: var(--primary-color);
-      color: white;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+        button {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-    button:hover {
-      background: #002d6c;
-    }
+        button:hover {
+            background: #002d6c;
+        }
 
-    .timestamps {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+        .timestamps {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-    .timestamp-card {
-      flex: 1 1 300px;
-    }
+        .timestamp-card {
+            flex: 1 1 300px;
+        }
+
+        form#manualUpdateForm {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        form#manualUpdateForm textarea {
+            font-family: monospace;
+            font-size: 0.9rem;
+            padding: 0.5rem;
+            resize: vertical;
+        }
+
+        .status {
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        .override-entry {
+            font-family: monospace;
+            background: var(--accent-color);
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+        }

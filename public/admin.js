@@ -88,4 +88,64 @@ document.addEventListener('DOMContentLoaded', () => {
     revertBtn.addEventListener('click', doRevert);
     refreshStatus();
     setInterval(refreshStatus, 60000); // Refresh every 60s
+
+    document.getElementById('manualUpdateForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const programId = document.getElementById('recordId').value.trim();
+  const updateJson = document.getElementById('updateJson').value.trim();
+  const result = document.getElementById('updateResult');
+
+  let updates;
+  try {
+    updates = JSON.parse(updateJson);
+  } catch (err) {
+    result.textContent = '❌ Invalid JSON format.';
+    return;
+  }
+
+  try {
+    const res = await fetch('/admin/update-composed', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: programId, updates })
+    });
+
+    const data = await res.json();
+    if (res.ok) {
+      result.textContent = `✅ Success: ${data.message}`;
+    } else {
+      result.textContent = `❌ Error: ${data.error || 'Unknown error'}`;
+    }
+  } catch (err) {
+    console.error(err);
+    result.textContent = '❌ Network error while submitting update.';
+  }
+});
+
+document.getElementById('revertLastUpdateBtn').addEventListener('click', async function () {
+  const result = document.getElementById('updateResult');
+
+  const confirmed = confirm('Are you sure you want to clear all manual overrides?');
+  if (!confirmed) return;
+
+  try {
+    const res = await fetch('/admin/revert-overrides', {
+      method: 'POST'
+    });
+
+    const data = await res.json();
+    if (res.ok) {
+      result.textContent = `✅ Success: ${data.message}`;
+    } else {
+      result.textContent = `❌ Error: ${data.error || 'Unknown error'}`;
+    }
+  } catch (err) {
+    console.error(err);
+    result.textContent = '❌ Network error during revert.';
+  }
+});
+
+    
+
 });

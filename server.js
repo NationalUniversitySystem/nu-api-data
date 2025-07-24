@@ -3,7 +3,86 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.use(express.static(path.join(__dirname, 'public')));
+const session = require('express-session');
+const VALID_USER = 'marketingdev';
+const VALID_PASS = 'NatMDev2025!';
+
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'nu-secret-key',
+  resave: false,
+  saveUninitialized: false, // better for login/session management
+  cookie: {
+    secure: false, // change to true in production with HTTPS
+    httpOnly: true,
+    maxAge: 1000 * 60 * 60 // 1 hour
+  }
+}));
+
+app.use(express.json());
+
+app.post('/api/login', (req, res) => {
+  const { username, password } = req.body;
+  if (username === VALID_USER && password === VALID_PASS) {
+    req.session.authenticated = true;
+
+    // Determine where to redirect user after login
+    const redirectTo = req.session.returnTo || '/admin.html';
+    delete req.session.returnTo;
+
+    return res.json({ success: true, redirectTo });
+  }
+
+  return res.status(401).json({ error: 'Invalid credentials' });
+});
+
+function requireAuth(req, res, next) {
+  if (req.session.authenticated) {
+    return next();
+  }
+
+  // Save the original URL to redirect after login
+  if (req.accepts('html')) {
+    req.session.returnTo = req.originalUrl;
+    return res.redirect('/login.html');
+  }
+
+  res.status(401).json({ error: 'Unauthorized' });
+}
+
+
+app.use((req, res, next) => {
+  if (req.path === '/' || req.path === '/index.html' || req.path === '/admin.html') return next();
+  express.static(path.join(__dirname, 'public'))(req, res, next);
+});
+
+// Protect root route (index.html)
+app.get(['/', '/index.html'], requireAuth, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Protect admin.html
+app.get('/admin.html', requireAuth, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
+
+app.post('/api/logout', (req, res) => {
+  req.session.destroy(err => {
+    if (err) return res.status(500).json({ success: false });
+    res.clearCookie('connect.sid');
+    res.json({ success: true });
+  });
+});
+
+app.get('/api/check-auth', (req, res) => {
+  if (req.session.authenticated) {
+    return res.json({ authenticated: true });
+  }
+  return res.status(401).json({ authenticated: false });
+});
+
+
+
+
 app.get('/nu-api/programs', async (req, res) => {
     try {
         const readJson = (filename) =>
@@ -156,6 +235,23 @@ app.get('/nu-api/programs', async (req, res) => {
                 Specializations: specs
             };
         });
+
+        // Load overrides
+const overridesPath = path.join(dataDir, 'mergedOverrides.json');
+let overrides = {};
+if (fs.existsSync(overridesPath)) {
+    overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
+}
+
+// Apply overrides per ProgramID
+finalData.forEach(p => {
+    const override = overrides[p.ProgramID];
+    if (override) {
+        Object.assign(p, override); // shallow merge
+    }
+});
+
+
         res.json(finalData);
     } catch (error) {
         console.error('Error building program data:', error);
@@ -216,6 +312,66 @@ app.post('/admin/revert', (req, res) => {
         res.status(500).json({ error: 'Rollback failed.' });
     }
 });
+
+app.post('/admin/update-composed', express.json(), (req, res) => {
+    const { id, updates } = req.body;
+
+    if (!id || typeof updates !== 'object') {
+        return res.status(400).json({ error: 'Invalid input.' });
+    }
+
+    const overridesPath = path.join(dataDir, 'mergedOverrides.json');
+    let overrides = {};
+    if (fs.existsSync(overridesPath)) {
+        overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
+    }
+
+    // Backup before writing
+    const timestamp = new Date().toISOString().replace(/:/g, '-');
+    const backupSubdir = path.join(backupDir, `composed-update-${timestamp}`);
+    fs.mkdirSync(backupSubdir);
+    fs.copyFileSync(overridesPath, path.join(backupSubdir, 'mergedOverrides.json'));
+
+    // Apply update
+    overrides[id] = {
+        ...(overrides[id] || {}),
+        ...updates
+    };
+
+    fs.writeFileSync(overridesPath, JSON.stringify(overrides, null, 2));
+    adminState.lastRollback = timestamp;
+    saveAdminState();
+
+    res.json({ success: true, message: `Overrides for ProgramID ${id} updated.` });
+});
+
+app.post('/admin/revert-overrides', (req, res) => {
+    const overridesPath = path.join(dataDir, 'mergedOverrides.json');
+    if (!fs.existsSync(overridesPath)) {
+        return res.status(400).json({ error: 'No override file found.' });
+    }
+
+    try {
+        // Backup
+        const timestamp = new Date().toISOString().replace(/:/g, '-');
+        const backupSubdir = path.join(backupDir, `override-reset-${timestamp}`);
+        fs.mkdirSync(backupSubdir);
+        fs.copyFileSync(overridesPath, path.join(backupSubdir, 'mergedOverrides.json'));
+
+        // Reset
+        fs.writeFileSync(overridesPath, JSON.stringify({}, null, 2));
+        adminState.lastRollback = timestamp;
+        saveAdminState();
+
+        res.json({ success: true, message: 'All overrides cleared.' });
+    } catch (err) {
+        console.error('Revert failed:', err);
+        res.status(500).json({ error: 'Failed to revert overrides.' });
+    }
+});
+
+
+
 // Status endpoint
 app.get('/admin/status', (req, res) => {
     res.json(adminState);
