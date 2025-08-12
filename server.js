@@ -66,10 +66,9 @@ function requireAuth(req, res, next) {
 }
 
 
-app.use((req, res, next) => {
-  if (req.path === '/' || req.path === '/index.html' || req.path === '/admin.html') return next();
-  express.static(path.join(__dirname, 'public'))(req, res, next);
-});
+
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Protect root route (index.html)
 app.get(['/', '/index.html'], requireAuth, (req, res) => {
