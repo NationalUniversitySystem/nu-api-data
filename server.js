@@ -1,27 +1,11 @@
-
-require('dotenv').config();
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const session = require('express-session');
-// Slack webhook URL (set in env or hardcoded for now)
-const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
-// Function to send error to Slack
-async function sendErrorToSlack(error, req) {
-    if (!SLACK_WEBHOOK_URL) return;
-    const message = {
-        text: `:rotating_light: *Error in NU API Data App*\n*Time:* ${new Date().toISOString()}\n*URL:* ${req?.originalUrl || 'N/A'}\n*Method:* ${req?.method || 'N/A'}\n*Error:* \`${error.message}\`\n*Stack:* \n\`${error.stack || 'N/A'}\``
-    };
-    try {
-        await axios.post(SLACK_WEBHOOK_URL, message);
-    } catch (err) {
-        console.error('Failed to send error to Slack:', err.message);
-    }
-}
-
+const VALID_USER = 'marketingdev';
+const VALID_PASS = 'NatMDev2025!';
 
 app.use(session({
   secret: process.env.SESSION_SECRET || 'nu-secret-key',
@@ -38,7 +22,7 @@ app.use(express.json());
 
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (username === process.env.VALID_USER && password === process.env.VALID_PASS) {
+  if (username === VALID_USER && password === VALID_PASS) {
     req.session.authenticated = true;
 
     // Determine where to redirect user after login
@@ -66,9 +50,10 @@ function requireAuth(req, res, next) {
 }
 
 
-
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use((req, res, next) => {
+  if (req.path === '/' || req.path === '/index.html' || req.path === '/admin.html') return next();
+  express.static(path.join(__dirname, 'public'))(req, res, next);
+});
 
 // Protect root route (index.html)
 app.get(['/', '/index.html'], requireAuth, (req, res) => {
@@ -98,7 +83,7 @@ app.get('/api/check-auth', (req, res) => {
 
 
 
-app.get('/nu-api/programs', async (req, res, next) => {
+app.get('/nu-api/programs', async (req, res) => {
     try {
         const readJson = (filename) =>
             JSON.parse(fs.readFileSync(path.join(__dirname, 'data', filename), 'utf8'));
@@ -269,7 +254,8 @@ finalData.forEach(p => {
 
         res.json(finalData);
     } catch (error) {
-        next(error);
+        console.error('Error building program data:', error);
+        res.status(500).json({ error: 'Failed to load program data' });
     }
 });
 const adminDataPath = path.join(__dirname, 'admin-state.json');
@@ -288,7 +274,7 @@ function saveAdminState() {
     fs.writeFileSync(adminDataPath, JSON.stringify(adminState, null, 2));
 }
 // Sync endpoint
-app.post('/admin/sync', (req, res, next) => {
+app.post('/admin/sync', (req, res) => {
     try {
         const timestamp = new Date().toISOString().replace(/:/g, '-');
         const backupSubdir = path.join(backupDir, `backup-${timestamp}`);
@@ -300,11 +286,12 @@ app.post('/admin/sync', (req, res, next) => {
         saveAdminState();
         res.json({ success: true, message: 'Data synced and backed up.' });
     } catch (err) {
-        next(err);
+        console.error('Sync error:', err);
+        res.status(500).json({ error: 'Sync failed.' });
     }
 });
 // Revert endpoint
-app.post('/admin/revert', (req, res, next) => {
+app.post('/admin/revert', (req, res) => {
     try {
         const backups = fs.readdirSync(backupDir)
             .filter(name => name.startsWith('backup-'))
@@ -321,47 +308,44 @@ app.post('/admin/revert', (req, res, next) => {
         saveAdminState();
         res.json({ success: true, message: 'Rollback successful.' });
     } catch (err) {
-        next(err);
+        console.error('Rollback error:', err);
+        res.status(500).json({ error: 'Rollback failed.' });
     }
 });
 
-app.post('/admin/update-composed', express.json(), (req, res, next) => {
-    try {
-        const { id, updates } = req.body;
+app.post('/admin/update-composed', express.json(), (req, res) => {
+    const { id, updates } = req.body;
 
-        if (!id || typeof updates !== 'object') {
-            return res.status(400).json({ error: 'Invalid input.' });
-        }
-
-        const overridesPath = path.join(dataDir, 'mergedOverrides.json');
-        let overrides = {};
-        if (fs.existsSync(overridesPath)) {
-            overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
-        }
-
-        // Backup before writing
-        const timestamp = new Date().toISOString().replace(/:/g, '-');
-        const backupSubdir = path.join(backupDir, `composed-update-${timestamp}`);
-        fs.mkdirSync(backupSubdir);
-        fs.copyFileSync(overridesPath, path.join(backupSubdir, 'mergedOverrides.json'));
-
-        // Apply update
-        overrides[id] = {
-            ...(overrides[id] || {}),
-            ...updates
-        };
-
-        fs.writeFileSync(overridesPath, JSON.stringify(overrides, null, 2));
-        adminState.lastRollback = timestamp;
-        saveAdminState();
-
-        res.json({ success: true, message: `Overrides for ProgramID ${id} updated.` });
-    } catch (err) {
-        next(err);
+    if (!id || typeof updates !== 'object') {
+        return res.status(400).json({ error: 'Invalid input.' });
     }
+
+    const overridesPath = path.join(dataDir, 'mergedOverrides.json');
+    let overrides = {};
+    if (fs.existsSync(overridesPath)) {
+        overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
+    }
+
+    // Backup before writing
+    const timestamp = new Date().toISOString().replace(/:/g, '-');
+    const backupSubdir = path.join(backupDir, `composed-update-${timestamp}`);
+    fs.mkdirSync(backupSubdir);
+    fs.copyFileSync(overridesPath, path.join(backupSubdir, 'mergedOverrides.json'));
+
+    // Apply update
+    overrides[id] = {
+        ...(overrides[id] || {}),
+        ...updates
+    };
+
+    fs.writeFileSync(overridesPath, JSON.stringify(overrides, null, 2));
+    adminState.lastRollback = timestamp;
+    saveAdminState();
+
+    res.json({ success: true, message: `Overrides for ProgramID ${id} updated.` });
 });
 
-app.post('/admin/revert-overrides', (req, res, next) => {
+app.post('/admin/revert-overrides', (req, res) => {
     const overridesPath = path.join(dataDir, 'mergedOverrides.json');
     if (!fs.existsSync(overridesPath)) {
         return res.status(400).json({ error: 'No override file found.' });
@@ -381,14 +365,9 @@ app.post('/admin/revert-overrides', (req, res, next) => {
 
         res.json({ success: true, message: 'All overrides cleared.' });
     } catch (err) {
-        next(err);
+        console.error('Revert failed:', err);
+        res.status(500).json({ error: 'Failed to revert overrides.' });
     }
-});
-// Global error handler (must be after all routes)
-app.use((err, req, res, next) => {
-    console.error('Global error handler:', err);
-    sendErrorToSlack(err, req);
-    res.status(500).json({ error: 'Internal server error.' });
 });
 
 
@@ -403,4 +382,3 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
     console.log(`\u2705 Server is running on http://localhost:${PORT}`);
 });
-
