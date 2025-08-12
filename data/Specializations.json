@@ -5265,36 +5265,6 @@
         "ModifiedDatetime": null
     },
     {
-        "specializationID": 447,
-        "programID": 299,
-        "specialization": "Criminal Justice",
-        "routingTo": "NCU",
-        "routingStartDate": "November, 15 2022 00:00:00",
-        "sparkroomCode": "CJCD",
-        "spanishTitle": null,
-        "AppHide": false,
-        "RFIHide": false,
-        "CreatedBy": "022793537",
-        "CreatedDatetime": "January, 04 2023 11:00:00",
-        "ModifiedBy": null,
-        "ModifiedDatetime": null
-    },
-    {
-        "specializationID": 448,
-        "programID": 299,
-        "specialization": "Homeland Security  - Leadership and Policy",
-        "routingTo": "NCU",
-        "routingStartDate": "November, 15 2022 00:00:00",
-        "sparkroomCode": "HSLPCD",
-        "spanishTitle": null,
-        "AppHide": false,
-        "RFIHide": false,
-        "CreatedBy": "022793537",
-        "CreatedDatetime": "January, 04 2023 11:00:00",
-        "ModifiedBy": null,
-        "ModifiedDatetime": null
-    },
-    {
         "specializationID": 450,
         "programID": 103,
         "specialization": "Software Development",
