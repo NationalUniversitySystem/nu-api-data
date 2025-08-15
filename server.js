@@ -98,7 +98,8 @@ app.get('/nu-api/programs', async (req, res) => {
         const degreeTypeMap = Object.fromEntries(
             degreeTypes.map(dt => [dt.degreeTypeID, {
                 degreeTypeID: dt.degreeTypeID,
-                degreeType: dt.degreeType
+                degreeType: dt.degreeType,
+                displayOrder: dt.displayOrder ?? null
             }])
         );
             const schoolMap = Object.fromEntries(
