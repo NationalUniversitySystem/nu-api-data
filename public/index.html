@@ -410,7 +410,31 @@
 
       document.getElementById('general-info').innerHTML = buildTable(generalInfo);
       document.getElementById('school-info').innerHTML = buildTable(program.SchoolInfo || {});
-      document.getElementById('aos-info').innerHTML = buildTable(program.AreaOfStudyInfo || {});
+      
+      // Handle multiple areas of study
+      const aosArray = program.AreaOfStudyInfo || [];
+      const aosHTML = aosArray.length ? `
+        <thead>
+          <tr>
+            <th>Area of Study ID</th>
+            <th>English AOS</th>
+            <th>Spanish AOS</th>
+            <th>Academic Int Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${aosArray.map(aos => `
+            <tr>
+              <td>${aos.AreaOfStudyID || ''}</td>
+              <td>${aos.EnglishAOS || ''}</td>
+              <td>${aos.SpanishAOS || ''}</td>
+              <td>${aos.AcadIntCode || ''}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      ` : '<tr><td>No areas of study available</td></tr>';
+      
+      document.getElementById('aos-info').innerHTML = aosHTML;
 
       const tuition = { ...program.Tuition };
       const stateLevelTuition = tuition.StateLevelTuition || [];
