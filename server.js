@@ -126,7 +126,7 @@ app.get('/nu-api/programs', async (req, res) => {
                 programAOSMap[pa.programid].push(areaOfStudyMap[pa.areaofstudyid]);
             }
         });
-        const tuitionByProgram = tuitions.filter(t => t.State === null && t.Specialization === null)
+        const tuitionByProgram = tuitions.filter(t => t.State === null && t.Specialization === null || t.Specialization === "Generalist")
             .reduce((acc, t) => {
                 acc[Number(t.ProgramID)] = t;
                 return acc;
