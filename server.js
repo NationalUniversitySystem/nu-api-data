@@ -87,14 +87,19 @@ app.get('/nu-api/programs', async (req, res) => {
     try {
         const readJson = (filename) =>
             JSON.parse(fs.readFileSync(path.join(__dirname, 'data', filename), 'utf8'));
+
         const programs = readJson('Programs.json');
         const schools = readJson('Schools.json');
         const degreeTypes = readJson('Degree.json');
         const tuitions = readJson('Tuitions.json');
         const specializations = readJson('Specializations.json');
-        const stateRestrictions = readJson('State-Restrictions.json');
+        const srStateRestrictions = readJson('SR-State-Restrictions.json');
         const programAOS = readJson('Program-To-AOS.json');
         const areasOfStudy = readJson('AOS.json');
+
+        const normalize = code => (code == null ? '' : String(code).trim().toUpperCase());
+
+        // ---- Build Mappings ----
         const degreeTypeMap = Object.fromEntries(
             degreeTypes.map(dt => [dt.degreeTypeID, {
                 degreeTypeID: dt.degreeTypeID,
@@ -102,14 +107,15 @@ app.get('/nu-api/programs', async (req, res) => {
                 displayOrder: dt.displayOrder ?? null
             }])
         );
-            const schoolMap = Object.fromEntries(
-          schools.map(s => [s.SchoolID, {
-              SchoolID: s.SchoolID, // ✅ Include SchoolID
-              EnglishSchool: s.School || "",
-              SpanishSchool: "", // You can populate this later if needed
-              WD_SchoolCODE: s.WD_SchoolCODE || ""
-          }])
-      );
+
+        const schoolMap = Object.fromEntries(
+            schools.map(s => [s.SchoolID, {
+                SchoolID: s.SchoolID,
+                EnglishSchool: s.School || "",
+                SpanishSchool: "",
+                WD_SchoolCODE: s.WD_SchoolCODE || ""
+            }])
+        );
 
         const areaOfStudyMap = Object.fromEntries(
             areasOfStudy.map(aos => [aos.AreaOfStudyID, {
@@ -119,6 +125,7 @@ app.get('/nu-api/programs', async (req, res) => {
                 AcadIntCode: aos.AcadIntCode || ""
             }])
         );
+
         const programAOSMap = {};
         programAOS.forEach(pa => {
             if (!programAOSMap[pa.programid]) programAOSMap[pa.programid] = [];
@@ -126,12 +133,17 @@ app.get('/nu-api/programs', async (req, res) => {
                 programAOSMap[pa.programid].push(areaOfStudyMap[pa.areaofstudyid]);
             }
         });
-        const tuitionByProgram = tuitions.filter(t => t.State === null && t.Specialization === null || t.Specialization === "Generalist")
-            .reduce((acc, t) => {
-                acc[Number(t.ProgramID)] = t;
-                return acc;
-            }, {});
+
+        // ---- Tuition Data ----
+        const tuitionByProgram = tuitions.filter(
+            t => (t.State === null && t.Specialization === null) || t.Specialization === "Generalist"
+        ).reduce((acc, t) => {
+            acc[Number(t.ProgramID)] = t;
+            return acc;
+        }, {});
+
         const stateLevelTuitions = tuitions.filter(t => t.State !== null && t.Specialization === null);
+
         const specializationTuitions = tuitions.filter(t => t.Specialization !== null)
             .reduce((acc, t) => {
                 const programID = t.ProgramID;
@@ -152,6 +164,7 @@ app.get('/nu-api/programs', async (req, res) => {
                 });
                 return acc;
             }, {});
+
         const specByProgram = specializations.reduce((acc, spec) => {
             const programID = spec.programID;
             if (!acc[programID]) acc[programID] = [];
@@ -168,11 +181,8 @@ app.get('/nu-api/programs', async (req, res) => {
             });
             return acc;
         }, {});
-        const restrictionsByProgram = stateRestrictions.reduce((acc, r) => {
-            if (!acc[r.ProgramID]) acc[r.ProgramID] = [];
-            acc[r.ProgramID].push(r.State);
-            return acc;
-        }, {});
+
+        // ---- Build Final Data ----
         const finalData = programs.map(p => {
             const tuition = tuitionByProgram[Number(p.ProgramID)] || {};
             const programStateTuitions = stateLevelTuitions
@@ -189,11 +199,28 @@ app.get('/nu-api/programs', async (req, res) => {
                     TotalProgramCost: t.TotalProgramCost || 0,
                     Subscription: t.Subscription || false
                 }));
+
             const specs = specByProgram[p.ProgramID] || [];
             specs.forEach(spec => {
                 const specTuitionData = specializationTuitions[p.ProgramID]?.[spec.EnglishName] || [];
                 spec.AdditionalStateLevelTuition = specTuitionData;
             });
+
+            const sparkCode = normalize(p.SparkroomCode);
+
+            // ---- SR-State-Restrictions only ----
+            const srMatches = srStateRestrictions
+                .filter(r => {
+                    const rCode = normalize(r.programCode);
+                    if (!rCode) return false;
+
+                    // ✅ Exact match only (case-insensitive)
+                    return rCode === sparkCode;
+                })
+                .map(r => r.state)
+                .filter(Boolean);
+
+
             return {
                 ProgramID: p.ProgramID,
                 EnglishName: p.Program || "",
@@ -213,13 +240,12 @@ app.get('/nu-api/programs', async (req, res) => {
                 url: "",
                 supplierID: p.supplierID || 0,
                 SchoolInfo: schoolMap[p.SchoolID] || {
-                  SchoolID: null,
-                  EnglishSchool: "",
-                  SpanishSchool: "",
-                  WD_SchoolCODE: ""
-              },
-
-               AreaOfStudyInfo: programAOSMap[p.ProgramID] || [],
+                    SchoolID: null,
+                    EnglishSchool: "",
+                    SpanishSchool: "",
+                    WD_SchoolCODE: ""
+                },
+                AreaOfStudyInfo: programAOSMap[p.ProgramID] || [],
                 Tuition: {
                     CreditsRequired: tuition.CreditsRequired || 0,
                     CoursesRequired: tuition.CoursesRequired || 0,
@@ -232,26 +258,25 @@ app.get('/nu-api/programs', async (req, res) => {
                     Subscription: tuition.Subscription || false,
                     StateLevelTuition: programStateTuitions
                 },
-                StateRestrictions: restrictionsByProgram[p.ProgramID] || [],
+                StateRestrictions: srMatches,
                 Specializations: specs
             };
         });
 
-        // Load overrides
-const overridesPath = path.join(dataDir, 'mergedOverrides.json');
-let overrides = {};
-if (fs.existsSync(overridesPath)) {
-    overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
-}
+        // ---- Apply Overrides ----
+        const dataDir = path.join(__dirname, 'data');
+        const overridesPath = path.join(dataDir, 'mergedOverrides.json');
+        let overrides = {};
+        if (fs.existsSync(overridesPath)) {
+            overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
+        }
 
-// Apply overrides per ProgramID
-finalData.forEach(p => {
-    const override = overrides[p.ProgramID];
-    if (override) {
-        Object.assign(p, override); // shallow merge
-    }
-});
-
+        finalData.forEach(p => {
+            const override = overrides[p.ProgramID];
+            if (override) {
+                Object.assign(p, override);
+            }
+        });
 
         res.json(finalData);
     } catch (error) {
@@ -259,6 +284,10 @@ finalData.forEach(p => {
         res.status(500).json({ error: 'Failed to load program data' });
     }
 });
+
+
+
+
 const adminDataPath = path.join(__dirname, 'admin-state.json');
 const dataDir = path.join(__dirname, 'data');
 const backupDir = path.join(__dirname, 'backup');
