@@ -2176,7 +2176,7 @@
     },
     {
         "ProgramID": 92,
-        "SchoolID": 1,
+        "SchoolID": 6,
         "NCUProgramCode": "",
         "NUProgramCode": "BASPSY",
         "Program": "Bachelor of Arts in Sport Psychology",
@@ -2351,7 +2351,7 @@
     },
     {
         "ProgramID": 99,
-        "SchoolID": 1,
+        "SchoolID": 3,
         "NCUProgramCode": "",
         "NUProgramCode": "BSCEE",
         "Program": "Bachelor of Science in Electrical and Computer Engineering",
@@ -2526,7 +2526,7 @@
     },
     {
         "ProgramID": 106,
-        "SchoolID": 5,
+        "SchoolID": 4,
         "NCUProgramCode": "",
         "NUProgramCode": "BSHCA",
         "Program": "Bachelor of Science in Healthcare Administration",
@@ -2601,7 +2601,7 @@
     },
     {
         "ProgramID": 109,
-        "SchoolID": 1,
+        "SchoolID": 3,
         "NCUProgramCode": "",
         "NUProgramCode": "BSMDE",
         "Program": "Bachelor of Science in Manufacturing Design Engineering Technology",
@@ -3451,7 +3451,7 @@
     },
     {
         "ProgramID": 144,
-        "SchoolID": 1,
+        "SchoolID": 6,
         "NCUProgramCode": "",
         "NUProgramCode": "MASPPTMP",
         "Program": "Master of Arts in Sport and Performance Psychology in Theoretical Mental Performance",
@@ -3526,7 +3526,7 @@
     },
     {
         "ProgramID": 147,
-        "SchoolID": 2,
+        "SchoolID": 5,
         "NCUProgramCode": "",
         "NUProgramCode": "MCJL",
         "Program": "Master in Criminal Justice Leadership",
@@ -3776,7 +3776,7 @@
     },
     {
         "ProgramID": 157,
-        "SchoolID": 1,
+        "SchoolID": 5,
         "NCUProgramCode": "",
         "NUProgramCode": "MFS",
         "Program": "Master of Forensic Sciences",
@@ -3826,7 +3826,7 @@
     },
     {
         "ProgramID": 159,
-        "SchoolID": 4,
+        "SchoolID": 5,
         "NCUProgramCode": "",
         "NUProgramCode": "MPA",
         "Program": "Master of Public Administration",
@@ -4451,7 +4451,7 @@
     },
     {
         "ProgramID": 187,
-        "SchoolID": 7,
+        "SchoolID": 1,
         "NCUProgramCode": "",
         "NUProgramCode": "BAENGITL",
         "Program": "Bachelor of Arts in English with Inspired Teaching and Learning Preliminary Single Subject Teaching Credential (California)",
@@ -4551,7 +4551,7 @@
     },
     {
         "ProgramID": 191,
-        "SchoolID": 7,
+        "SchoolID": 1,
         "NCUProgramCode": "",
         "NUProgramCode": "BASSITL",
         "Program": "Bachelor of Arts in Social Science with an Inspired Teaching and Learning Preliminary Single Subject Credential (California)",
@@ -8126,7 +8126,7 @@
     },
     {
         "ProgramID": 369,
-        "SchoolID": 1,
+        "SchoolID": 6,
         "NCUProgramCode": "",
         "NUProgramCode": "MACPSYCH",
         "Program": "Master of Arts in Counseling Psychology (California)",
