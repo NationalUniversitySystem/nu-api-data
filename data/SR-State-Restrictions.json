@@ -1,4 +1,4 @@
- [
+[
     {
       "id": "a3aVy0000005093IAA",
       "name": "SR-5764",
@@ -2607,6 +2607,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004yeWIAQ",
+      "name": "SR-0063",
+      "stateRestrictionCode": "BAECDITL-NU-OR",
+      "programCode": "BAECDITL",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004yeXIAQ",
       "name": "SR-0064",
       "stateRestrictionCode": "BAECDITL-NU-NH",
@@ -3311,6 +3322,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004yfaIAA",
+      "name": "SR-0129",
+      "stateRestrictionCode": "BAENG1-NU-OR",
+      "programCode": "BAENG1",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004yfbIAA",
       "name": "SR-0130",
       "stateRestrictionCode": "BAENG1-NU-OK",
@@ -3889,6 +3911,17 @@
       "programCode": "BAENGLITL",
       "orgId": "NU",
       "state": "ND",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004ygSIAQ",
+      "name": "SR-0183",
+      "stateRestrictionCode": "BAENGLITL-NU-OR",
+      "programCode": "BAENGLITL",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -4780,6 +4813,17 @@
       "programCode": "BAIPSY1",
       "orgId": "NU",
       "state": "PR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004yhoIAA",
+      "name": "SR-0267",
+      "stateRestrictionCode": "BAIPSY1-NU-OR",
+      "programCode": "BAIPSY1",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -6457,6 +6501,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004ykKIAQ",
+      "name": "SR-0423",
+      "stateRestrictionCode": "BAMGT4-NU-OR",
+      "programCode": "BAMGT4",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004ykLIAQ",
       "name": "SR-0424",
       "stateRestrictionCode": "BAMGT4-NU-VT",
@@ -7134,6 +7189,17 @@
       "programCode": "BAPLAWSTD",
       "orgId": "NU",
       "state": "VI",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004ylMIAQ",
+      "name": "SR-0487",
+      "stateRestrictionCode": "BAPLAWSTD1-NU-OR",
+      "programCode": "BAPLAWSTD1",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -8745,6 +8811,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004ynmIAA",
+      "name": "SR-0637",
+      "stateRestrictionCode": "BASPSY1-NU-OR",
+      "programCode": "BASPSY1",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004ynnIAA",
       "name": "SR-0638",
       "stateRestrictionCode": "BASPSY1-NU-OK",
@@ -9405,6 +9482,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004yolIAA",
+      "name": "SR-0698",
+      "stateRestrictionCode": "BASSITL-NU-OR",
+      "programCode": "BASSITL",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004yomIAA",
       "name": "SR-0699",
       "stateRestrictionCode": "BASSITL-NU-MT",
@@ -9977,6 +10065,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004ypcIAA",
+      "name": "SR-0751",
+      "stateRestrictionCode": "BBA2-NU-OR",
+      "programCode": "BBA2",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004ypdIAA",
       "name": "SR-0752",
       "stateRestrictionCode": "BBA2-NU-NC",
@@ -10379,6 +10478,17 @@
       "programCode": "BPA1",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004yqFIAQ",
+      "name": "SR-0790",
+      "stateRestrictionCode": "BPA1-NU-OR",
+      "programCode": "BPA1",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -11319,6 +11429,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004yreIAA",
+      "name": "SR-0877",
+      "stateRestrictionCode": "BSBIO-NU-OR",
+      "programCode": "BSBIO",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004yrfIAA",
       "name": "SR-0878",
       "stateRestrictionCode": "BSBIO-NU-NV",
@@ -11798,6 +11919,17 @@
       "programCode": "BSBIO1",
       "orgId": "NU",
       "state": "NC",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004ysNIAQ",
+      "name": "SR-0922",
+      "stateRestrictionCode": "BSBIO1-NU-OR",
+      "programCode": "BSBIO1",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -12925,17 +13057,6 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004yu3IAA",
-      "name": "SR-1026",
-      "stateRestrictionCode": "BSCJA1-NU-MI",
-      "programCode": "BSCJA1",
-      "orgId": "NU",
-      "state": "MI",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004yu4IAA",
       "name": "SR-1027",
       "stateRestrictionCode": "BSCJA1-NU-MO",
@@ -13508,17 +13629,6 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004yuvIAA",
-      "name": "SR-1080",
-      "stateRestrictionCode": "BSCJA2-NU-MI",
-      "programCode": "BSCJA2",
-      "orgId": "NU",
-      "state": "MI",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004yuwIAA",
       "name": "SR-1081",
       "stateRestrictionCode": "BSCJA2-NU-MA",
@@ -14047,17 +14157,6 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004yvjIAA",
-      "name": "SR-1130",
-      "stateRestrictionCode": "BSCJA5-NU-MI",
-      "programCode": "BSCJA5",
-      "orgId": "NU",
-      "state": "MI",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004yvkIAA",
       "name": "SR-1131",
       "stateRestrictionCode": "BSCJA5-NU-AP",
@@ -14207,6 +14306,17 @@
       "programCode": "BSCLS",
       "orgId": "NU",
       "state": "NH",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004yvyIAA",
+      "name": "SR-1145",
+      "stateRestrictionCode": "BSCLS-NU-OR",
+      "programCode": "BSCLS",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -15147,6 +15257,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004yxNIAQ",
+      "name": "SR-1232",
+      "stateRestrictionCode": "BSDS-NU-OR",
+      "programCode": "BSDS",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004yxOIAQ",
       "name": "SR-1233",
       "stateRestrictionCode": "BSDS-NU-NC",
@@ -15345,6 +15466,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004yxgIAA",
+      "name": "SR-1251",
+      "stateRestrictionCode": "BSHRM-NU-OR",
+      "programCode": "BSHRM",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004yxhIAA",
       "name": "SR-1252",
       "stateRestrictionCode": "BSHRM-NU-WI",
@@ -15483,6 +15615,17 @@
       "programCode": "BSHSEM1",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004yxuIAA",
+      "name": "SR-1265",
+      "stateRestrictionCode": "BSHSEM1-NU-OR",
+      "programCode": "BSHSEM1",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -16082,6 +16225,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004yynIAA",
+      "name": "SR-1320",
+      "stateRestrictionCode": "BSHSEM2-NU-OR",
+      "programCode": "BSHSEM2",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004yyoIAA",
       "name": "SR-1321",
       "stateRestrictionCode": "BSHSEM2-NU-OK",
@@ -16627,6 +16781,17 @@
       "programCode": "BSHSEM2",
       "orgId": "NU",
       "state": "MI",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004yzcIAA",
+      "name": "SR-1371",
+      "stateRestrictionCode": "BSHSEM4-NU-OR",
+      "programCode": "BSHSEM4",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -17292,6 +17457,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004z0bIAA",
+      "name": "SR-1432",
+      "stateRestrictionCode": "BSLSCM-NU-OR",
+      "programCode": "BSLSCM",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004z0cIAA",
       "name": "SR-1433",
       "stateRestrictionCode": "BSLSCM-NU-NC",
@@ -17419,6 +17595,17 @@
       "programCode": "BSMATH",
       "orgId": "NU",
       "state": "KY",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004z0oIAA",
+      "name": "SR-1445",
+      "stateRestrictionCode": "BSMATH-NU-OR",
+      "programCode": "BSMATH",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -17672,6 +17859,17 @@
       "programCode": "BSMKT",
       "orgId": "NU",
       "state": "VI",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004z1CIAQ",
+      "name": "SR-1469",
+      "stateRestrictionCode": "BSMKT-NU-OR",
+      "programCode": "BSMKT",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -18975,50 +19173,6 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004z3KIAQ",
-      "name": "SR-1601",
-      "stateRestrictionCode": "BSNSGRN-NU-WY",
-      "programCode": "BSNSGRN",
-      "orgId": "NU",
-      "state": "WY",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004z3LIAQ",
-      "name": "SR-1602",
-      "stateRestrictionCode": "BSNSGRN-NU-SC",
-      "programCode": "BSNSGRN",
-      "orgId": "NU",
-      "state": "SC",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004z3MIAQ",
-      "name": "SR-1603",
-      "stateRestrictionCode": "BSNSGRN-NU-SD",
-      "programCode": "BSNSGRN",
-      "orgId": "NU",
-      "state": "SD",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004z3NIAQ",
-      "name": "SR-1604",
-      "stateRestrictionCode": "BSNSGRN-NU-TN",
-      "programCode": "BSNSGRN",
-      "orgId": "NU",
-      "state": "TN",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004z3OIAQ",
       "name": "SR-1605",
       "stateRestrictionCode": "BSNSGRN-NU-WI",
@@ -19047,6 +19201,17 @@
       "programCode": "BSNSGRN",
       "orgId": "NU",
       "state": "DC",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004z3kIAA",
+      "name": "SR-1627",
+      "stateRestrictionCode": "BSNSGRN-NU-MS",
+      "programCode": "BSNSGRN",
+      "orgId": "NU",
+      "state": "MS",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -26873,6 +27038,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zFeIAI",
+      "name": "SR-2365",
+      "stateRestrictionCode": "CRSEDESNI-NU-OR",
+      "programCode": "CRSEDESNI",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zFfIAI",
       "name": "SR-2366",
       "stateRestrictionCode": "CRSEDESNI-NU-OK",
@@ -27451,6 +27627,17 @@
       "programCode": "CRSEDESNI",
       "orgId": "NU",
       "state": "MA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zGWIAY",
+      "name": "SR-2419",
+      "stateRestrictionCode": "CRSEDMMS-NU-OR",
+      "programCode": "CRSEDMMS",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -28072,6 +28259,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zHRIAY",
+      "name": "SR-2476",
+      "stateRestrictionCode": "CRSEDMMSI-NU-OR",
+      "programCode": "CRSEDMMSI",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zHSIAY",
       "name": "SR-2477",
       "stateRestrictionCode": "CRSEDMMSI-NU-OK",
@@ -28650,6 +28848,17 @@
       "programCode": "CTADCU",
       "orgId": "NU",
       "state": "NH",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zIJIAY",
+      "name": "SR-2530",
+      "stateRestrictionCode": "CTADCU-NU-OR",
+      "programCode": "CTADCU",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -29277,6 +29486,17 @@
       "programCode": "CTAIMLG0",
       "orgId": "NU",
       "state": "PR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zJFIAY",
+      "name": "SR-2588",
+      "stateRestrictionCode": "CTAIMLG0-NU-OR",
+      "programCode": "CTAIMLG0",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -30140,6 +30360,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zKYIAY",
+      "name": "SR-2669",
+      "stateRestrictionCode": "CTECE1U-NU-OR",
+      "programCode": "CTECE1U",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zKZIAY",
       "name": "SR-2670",
       "stateRestrictionCode": "CTECE1U-NU-PR",
@@ -30404,6 +30635,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zKxIAI",
+      "name": "SR-2694",
+      "stateRestrictionCode": "CTECE2U-NU-OR",
+      "programCode": "CTECE2U",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zKyIAI",
       "name": "SR-2695",
       "stateRestrictionCode": "CTECE2U-NU-OH",
@@ -30597,6 +30839,17 @@
       "programCode": "CTECE3U",
       "orgId": "NU",
       "state": "OH",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zLGIAY",
+      "name": "SR-2713",
+      "stateRestrictionCode": "CTECE3U-NU-OR",
+      "programCode": "CTECE3U",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -30817,6 +31070,17 @@
       "programCode": "CTECE4U",
       "orgId": "NU",
       "state": "OH",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zLbIAI",
+      "name": "SR-2734",
+      "stateRestrictionCode": "CTECE4U-NU-OR",
+      "programCode": "CTECE4U",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -31114,6 +31378,17 @@
       "programCode": "CTECE5U",
       "orgId": "NU",
       "state": "PR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zM3IAI",
+      "name": "SR-2762",
+      "stateRestrictionCode": "CTECE5U-NU-OR",
+      "programCode": "CTECE5U",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -31807,6 +32082,17 @@
       "programCode": "CTFNPG",
       "orgId": "NU",
       "state": "NH",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zN6IAI",
+      "name": "SR-2827",
+      "stateRestrictionCode": "CTFNPG-NU-OR",
+      "programCode": "CTFNPG",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -34474,6 +34760,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zR8IAI",
+      "name": "SR-3077",
+      "stateRestrictionCode": "CTPMHNPG-NU-OR",
+      "programCode": "CTPMHNPG",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zR9IAI",
       "name": "SR-3078",
       "stateRestrictionCode": "CTPMHNPG-NU-NC",
@@ -35596,6 +35893,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zSoIAI",
+      "name": "SR-3181",
+      "stateRestrictionCode": "DNAP-NU-OR",
+      "programCode": "DNAP",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zSpIAI",
       "name": "SR-3182",
       "stateRestrictionCode": "DNAP-NU-OK",
@@ -36256,6 +36564,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zTnIAI",
+      "name": "SR-3242",
+      "stateRestrictionCode": "EDDOI-NU-OR",
+      "programCode": "EDDOI",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zToIAI",
       "name": "SR-3243",
       "stateRestrictionCode": "EDDOI-NU-DC",
@@ -36493,6 +36812,17 @@
       "programCode": "MACPSYC",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zUBIAY",
+      "name": "SR-3266",
+      "stateRestrictionCode": "MACPSYC-NU-OR",
+      "programCode": "MACPSYC",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -36850,6 +37180,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zUiIAI",
+      "name": "SR-3299",
+      "stateRestrictionCode": "MACPSYC-NU-CA",
+      "programCode": "MACPSYC",
+      "orgId": "NU",
+      "state": "CA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zUjIAI",
       "name": "SR-3300",
       "stateRestrictionCode": "MACPSYC-NU-CO",
@@ -37065,6 +37406,17 @@
       "programCode": "MACPSYC",
       "orgId": "NU",
       "state": "ME",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zV3IAI",
+      "name": "SR-3320",
+      "stateRestrictionCode": "MACPSYCH-NU-OR",
+      "programCode": "MACPSYCH",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -37818,6 +38170,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zWBIAY",
+      "name": "SR-3390",
+      "stateRestrictionCode": "MACTS1-NU-OR",
+      "programCode": "MACTS1",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zWCIAY",
       "name": "SR-3391",
       "stateRestrictionCode": "MACTS1-NU-PR",
@@ -38154,6 +38517,17 @@
       "programCode": "MAENG1",
       "orgId": "NU",
       "state": "OK",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zWhIAI",
+      "name": "SR-3422",
+      "stateRestrictionCode": "MAENG1-NU-OR",
+      "programCode": "MAENG1",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -40051,6 +40425,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zZXIAY",
+      "name": "SR-3598",
+      "stateRestrictionCode": "MASPPAMP-NU-OR",
+      "programCode": "MASPPAMP",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zZYIAY",
       "name": "SR-3599",
       "stateRestrictionCode": "MASPPAMP-NU-WI",
@@ -40898,6 +41283,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zapIAA",
+      "name": "SR-3678",
+      "stateRestrictionCode": "MASPPTMP1-NU-OR",
+      "programCode": "MASPPTMP1",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zaqIAA",
       "name": "SR-3679",
       "stateRestrictionCode": "MASPPTMP1-NU-OK",
@@ -41333,17 +41729,6 @@
       "programCode": "MASPPTMP1",
       "orgId": "NU",
       "state": "ME",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zbUIAQ",
-      "name": "SR-3719",
-      "stateRestrictionCode": "MASPPTMP1-NU-MS",
-      "programCode": "MASPPTMP1",
-      "orgId": "NU",
-      "state": "MS",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -42114,6 +42499,17 @@
       "programCode": "MBAD",
       "orgId": "NU",
       "state": "VI",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zceIAA",
+      "name": "SR-3791",
+      "stateRestrictionCode": "MBAD-NU-OR",
+      "programCode": "MBAD",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -42966,6 +43362,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004ze0IAA",
+      "name": "SR-3875",
+      "stateRestrictionCode": "MECE-NU-OR",
+      "programCode": "MECE",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004ze1IAA",
       "name": "SR-3876",
       "stateRestrictionCode": "MECE-NU-DC",
@@ -43027,6 +43434,17 @@
       "programCode": "MEDBITLM",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004ze7IAA",
+      "name": "SR-3882",
+      "stateRestrictionCode": "MEDBITLM-NU-OR",
+      "programCode": "MEDBITLM",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -43610,6 +44028,17 @@
       "programCode": "MEDBITLM",
       "orgId": "NU",
       "state": "MI",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zezIAA",
+      "name": "SR-3936",
+      "stateRestrictionCode": "MEDBITLMI-NU-OR",
+      "programCode": "MEDBITLMI",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -44215,6 +44644,17 @@
       "programCode": "MEDBITLMI",
       "orgId": "NU",
       "state": "MA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zftIAA",
+      "name": "SR-3992",
+      "stateRestrictionCode": "MEDBITLS-NU-OR",
+      "programCode": "MEDBITLS",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -44847,6 +45287,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zgpIAA",
+      "name": "SR-4050",
+      "stateRestrictionCode": "MEDBITLSI-NU-OR",
+      "programCode": "MEDBITLSI",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zgqIAA",
       "name": "SR-4051",
       "stateRestrictionCode": "MEDBITLSI-NU-OK",
@@ -45425,6 +45876,17 @@
       "programCode": "MEDBITLSI",
       "orgId": "NU",
       "state": "MI",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zhhIAA",
+      "name": "SR-4104",
+      "stateRestrictionCode": "MEDITLM-NU-OR",
+      "programCode": "MEDITLM",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -46030,6 +46492,17 @@
       "programCode": "MEDITLMI",
       "orgId": "NU",
       "state": "NH",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zibIAA",
+      "name": "SR-4160",
+      "stateRestrictionCode": "MEDITLMI-NU-OR",
+      "programCode": "MEDITLMI",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -46728,6 +47201,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zjdIAA",
+      "name": "SR-4224",
+      "stateRestrictionCode": "MEDITLS-NU-OR",
+      "programCode": "MEDITLS",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zjeIAA",
       "name": "SR-4225",
       "stateRestrictionCode": "MEDITLS-NU-MS",
@@ -47207,6 +47691,17 @@
       "programCode": "MEDITLS",
       "orgId": "NU",
       "state": "MA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zkMIAQ",
+      "name": "SR-4269",
+      "stateRestrictionCode": "MEDITLSI-NU-OR",
+      "programCode": "MEDITLSI",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -47823,6 +48318,17 @@
       "programCode": "MEDSEDESN",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zlHIAQ",
+      "name": "SR-4326",
+      "stateRestrictionCode": "MEDSEDESN-NU-OR",
+      "programCode": "MEDSEDESN",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -48510,6 +49016,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zmIIAQ",
+      "name": "SR-4389",
+      "stateRestrictionCode": "MEDSEDESNI-NU-OR",
+      "programCode": "MEDSEDESNI",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zmJIAQ",
       "name": "SR-4390",
       "stateRestrictionCode": "MEDSEDESNI-NU-NY",
@@ -49000,6 +49517,17 @@
       "programCode": "MEDSEDMMS",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zn2IAA",
+      "name": "SR-4435",
+      "stateRestrictionCode": "MEDSEDMMS-NU-OR",
+      "programCode": "MEDSEDMMS",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -49594,6 +50122,17 @@
       "programCode": "MEDSEDMMSI",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004znvIAA",
+      "name": "SR-4490",
+      "stateRestrictionCode": "MEDSEDMMSI-NU-OR",
+      "programCode": "MEDSEDMMSI",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -50347,6 +50886,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zp2IAA",
+      "name": "SR-4559",
+      "stateRestrictionCode": "MFS1-NU-OR",
+      "programCode": "MFS1",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zp3IAA",
       "name": "SR-4560",
       "stateRestrictionCode": "MFS1-NU-SC",
@@ -50815,6 +51365,17 @@
       "programCode": "MFS2",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zpkIAA",
+      "name": "SR-4603",
+      "stateRestrictionCode": "MFS2-NU-OR",
+      "programCode": "MFS2",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -51326,17 +51887,6 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004zqVIAQ",
-      "name": "SR-4650",
-      "stateRestrictionCode": "MFS2-NU-MS",
-      "programCode": "MFS2",
-      "orgId": "NU",
-      "state": "MS",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004zqWIAQ",
       "name": "SR-4651",
       "stateRestrictionCode": "MFS2-NU-LA",
@@ -51772,17 +52322,6 @@
       "programCode": "MNCJA",
       "orgId": "NU",
       "state": "VI",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zrAIAQ",
-      "name": "SR-4691",
-      "stateRestrictionCode": "MNCOM-NU-CA",
-      "programCode": "MNCOM",
-      "orgId": "NU",
-      "state": "CA",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -52938,6 +53477,17 @@
       "programCode": "MPA1",
       "orgId": "NU",
       "state": "MI",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zstIAA",
+      "name": "SR-4798",
+      "stateRestrictionCode": "MPA2-NU-OR",
+      "programCode": "MPA2",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -54461,6 +55011,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zv9IAA",
+      "name": "SR-4938",
+      "stateRestrictionCode": "MPA4-NU-OR",
+      "programCode": "MPA4",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zvAIAQ",
       "name": "SR-4939",
       "stateRestrictionCode": "MPA4-NU-AL",
@@ -55638,6 +56199,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zwuIAA",
+      "name": "SR-5047",
+      "stateRestrictionCode": "MSCS1-NU-OR",
+      "programCode": "MSCS1",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zwvIAA",
       "name": "SR-5048",
       "stateRestrictionCode": "MSCS1-NU-PR",
@@ -56496,6 +57068,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy0000004zyCIAQ",
+      "name": "SR-5127",
+      "stateRestrictionCode": "MSEA-NU-OR",
+      "programCode": "MSEA",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy0000004zyDIAQ",
       "name": "SR-5128",
       "stateRestrictionCode": "MSEA-NU-PA",
@@ -56887,6 +57470,17 @@
       "programCode": "MSEDC",
       "orgId": "NU",
       "state": "OK",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy0000004zynIAA",
+      "name": "SR-5164",
+      "stateRestrictionCode": "MSEDC-NU-OR",
+      "programCode": "MSEDC",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -57486,34 +58080,12 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004zziIAA",
-      "name": "SR-5221",
-      "stateRestrictionCode": "MSEDCCCC-NU-OK",
+      "id": "a3aVy0000004zzhIAA",
+      "name": "SR-5220",
+      "stateRestrictionCode": "MSEDCCCC-NU-OR",
       "programCode": "MSEDCCCC",
       "orgId": "NU",
-      "state": "OK",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzjIAA",
-      "name": "SR-5222",
-      "stateRestrictionCode": "MSEDCCCC-NU-OH",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "OH",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzkIAA",
-      "name": "SR-5223",
-      "stateRestrictionCode": "MSEDCCCC-NU-ND",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "ND",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -57525,17 +58097,6 @@
       "programCode": "MSEDCCCC",
       "orgId": "NU",
       "state": "NC",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzmIAA",
-      "name": "SR-5225",
-      "stateRestrictionCode": "MSEDCCCC-NU-NJ",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "NJ",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -57563,17 +58124,6 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004zzpIAA",
-      "name": "SR-5228",
-      "stateRestrictionCode": "MSEDCCCC-NU-NE",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "NE",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004zzrIAA",
       "name": "SR-5230",
       "stateRestrictionCode": "MSEDCCCC-NU-NY",
@@ -57585,155 +58135,12 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004zzsIAA",
-      "name": "SR-5231",
-      "stateRestrictionCode": "MSEDCCCC-NU-RI",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "RI",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zztIAA",
-      "name": "SR-5232",
-      "stateRestrictionCode": "MSEDCCCC-NU-SC",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "SC",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzuIAA",
-      "name": "SR-5233",
-      "stateRestrictionCode": "MSEDCCCC-NU-SD",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "SD",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzvIAA",
-      "name": "SR-5234",
-      "stateRestrictionCode": "MSEDCCCC-NU-TN",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "TN",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzwIAA",
-      "name": "SR-5235",
-      "stateRestrictionCode": "MSEDCCCC-NU-TX",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "TX",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzxIAA",
-      "name": "SR-5236",
-      "stateRestrictionCode": "MSEDCCCC-NU-WY",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "WY",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000004zzyIAA",
-      "name": "SR-5237",
-      "stateRestrictionCode": "MSEDCCCC-NU-VT",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "VT",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004zzzIAA",
       "name": "SR-5238",
       "stateRestrictionCode": "MSEDCCCC-NU-VA",
       "programCode": "MSEDCCCC",
       "orgId": "NU",
       "state": "VA",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005000IAA",
-      "name": "SR-5239",
-      "stateRestrictionCode": "MSEDCCCC-NU-WA",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "WA",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005001IAA",
-      "name": "SR-5240",
-      "stateRestrictionCode": "MSEDCCCC-NU-WV",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "WV",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005002IAA",
-      "name": "SR-5241",
-      "stateRestrictionCode": "MSEDCCCC-NU-WI",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "WI",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005003IAA",
-      "name": "SR-5242",
-      "stateRestrictionCode": "MSEDCCCC-NU-MO",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "MO",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005004IAA",
-      "name": "SR-5243",
-      "stateRestrictionCode": "MSEDCCCC-NU-NH",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "NH",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005005IAA",
-      "name": "SR-5244",
-      "stateRestrictionCode": "MSEDCCCC-NU-UT",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "UT",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -57756,28 +58163,6 @@
       "programCode": "MSEDCCCC",
       "orgId": "NU",
       "state": "MS",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005008IAA",
-      "name": "SR-5247",
-      "stateRestrictionCode": "MSEDCCCC-NU-AK",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "AK",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy0000005009IAA",
-      "name": "SR-5248",
-      "stateRestrictionCode": "MSEDCCCC-NU-AZ",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "AZ",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -57827,67 +58212,12 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy000000500EIAQ",
-      "name": "SR-5253",
-      "stateRestrictionCode": "MSEDCCCC-NU-CO",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "CO",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500FIAQ",
-      "name": "SR-5254",
-      "stateRestrictionCode": "MSEDCCCC-NU-DE",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "DE",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500GIAQ",
-      "name": "SR-5255",
-      "stateRestrictionCode": "MSEDCCCC-NU-FL",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "FL",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy000000500HIAQ",
       "name": "SR-5256",
       "stateRestrictionCode": "MSEDCCCC-NU-GA",
       "programCode": "MSEDCCCC",
       "orgId": "NU",
       "state": "GA",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500IIAQ",
-      "name": "SR-5257",
-      "stateRestrictionCode": "MSEDCCCC-NU-HI",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "HI",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500JIAQ",
-      "name": "SR-5258",
-      "stateRestrictionCode": "MSEDCCCC-NU-ID",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "ID",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -57915,78 +58245,12 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy000000500MIAQ",
-      "name": "SR-5261",
-      "stateRestrictionCode": "MSEDCCCC-NU-CT",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "CT",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500NIAQ",
-      "name": "SR-5262",
-      "stateRestrictionCode": "MSEDCCCC-NU-MA",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "MA",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500OIAQ",
-      "name": "SR-5263",
-      "stateRestrictionCode": "MSEDCCCC-NU-IL",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "IL",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy000000500PIAQ",
       "name": "SR-5264",
       "stateRestrictionCode": "MSEDCCCC-NU-MD",
       "programCode": "MSEDCCCC",
       "orgId": "NU",
       "state": "MD",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500QIAQ",
-      "name": "SR-5265",
-      "stateRestrictionCode": "MSEDCCCC-NU-NM",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "NM",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500RIAQ",
-      "name": "SR-5266",
-      "stateRestrictionCode": "MSEDCCCC-NU-ME",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "ME",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500SIAQ",
-      "name": "SR-5267",
-      "stateRestrictionCode": "MSEDCCCC-NU-IN",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "IN",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -58020,17 +58284,6 @@
       "programCode": "MSEDCCCC",
       "orgId": "NU",
       "state": "IA",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
-      "id": "a3aVy000000500WIAQ",
-      "name": "SR-5271",
-      "stateRestrictionCode": "MSEDCCCC-NU-MI",
-      "programCode": "MSEDCCCC",
-      "orgId": "NU",
-      "state": "MI",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -58284,6 +58537,17 @@
       "programCode": "MSHSEM1",
       "orgId": "NU",
       "state": "NY",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy000000500uIAA",
+      "name": "SR-5295",
+      "stateRestrictionCode": "MSHSEM1-NU-OR",
+      "programCode": "MSHSEM1",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -60170,6 +60434,17 @@
       "programType": "Program"
     },
     {
+      "id": "a3aVy000000503iIAA",
+      "name": "SR-5469",
+      "stateRestrictionCode": "MSNSG-NU-OR",
+      "programCode": "MSNSG",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
       "id": "a3aVy000000503jIAA",
       "name": "SR-5470",
       "stateRestrictionCode": "MSNSG-NU-NV",
@@ -60990,6 +61265,17 @@
       "programCode": "MSSCLPSY",
       "orgId": "NU",
       "state": "MT",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy000000504wIAA",
+      "name": "SR-5545",
+      "stateRestrictionCode": "MSSCLPSY-NU-OR",
+      "programCode": "MSSCLPSY",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -62783,6 +63069,17 @@
       "programCode": "PSYD",
       "orgId": "NU",
       "state": "PA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy000000507cIAA",
+      "name": "SR-5711",
+      "stateRestrictionCode": "PSYD-NU-OR",
+      "programCode": "PSYD",
+      "orgId": "NU",
+      "state": "OR",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
@@ -66380,6 +66677,1337 @@
       "programCode": "MSABA",
       "orgId": "NU",
       "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FCwdtIAD",
+      "name": "SR-6240",
+      "stateRestrictionCode": "PACEMC-NU-NC",
+      "programCode": "PACEMC",
+      "orgId": "NU",
+      "state": "NC",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FCwduIAD",
+      "name": "SR-6241",
+      "stateRestrictionCode": "NONLSG0-NU-NC",
+      "programCode": "NONLSG0",
+      "orgId": "NU",
+      "state": "NC",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymrIAB",
+      "name": "SR-6242",
+      "stateRestrictionCode": "BALA-AA-NU-AA",
+      "programCode": "BALA",
+      "orgId": "NU",
+      "state": "AA",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymsIAB",
+      "name": "SR-6243",
+      "stateRestrictionCode": "BALA-AA-NU-AE",
+      "programCode": "BALA",
+      "orgId": "NU",
+      "state": "AE",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymtIAB",
+      "name": "SR-6244",
+      "stateRestrictionCode": "BALA-AA-NU-AP",
+      "programCode": "BALA",
+      "orgId": "NU",
+      "state": "AP",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymuIAB",
+      "name": "SR-6245",
+      "stateRestrictionCode": "BALA-AA-NU-KY",
+      "programCode": "BALA",
+      "orgId": "NU",
+      "state": "KY",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymvIAB",
+      "name": "SR-6246",
+      "stateRestrictionCode": "BALAITL-OR-NU-OR",
+      "programCode": "BALAITL",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymwIAB",
+      "name": "SR-6247",
+      "stateRestrictionCode": "AA-NU-MA",
+      "programCode": "AA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymxIAB",
+      "name": "SR-6248",
+      "stateRestrictionCode": "BAMGT5-NU-MS",
+      "programCode": "BAMGT5",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdymzIAB",
+      "name": "SR-6250",
+      "stateRestrictionCode": "BALA-AA-NU-MS",
+      "programCode": "BALA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn0IAB",
+      "name": "SR-6251",
+      "stateRestrictionCode": "BALA-AA-NU-OR",
+      "programCode": "BALA",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn1IAB",
+      "name": "SR-6252",
+      "stateRestrictionCode": "BAPLAWSTD1-NU-MS",
+      "programCode": "BAPLAWSTD1",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn2IAB",
+      "name": "SR-6253",
+      "stateRestrictionCode": "BSPLA-NU-MS",
+      "programCode": "BSPLA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn3IAB",
+      "name": "SR-6254",
+      "stateRestrictionCode": "BSPMB-NU-MS",
+      "programCode": "BSPMB",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn4IAB",
+      "name": "SR-6255",
+      "stateRestrictionCode": "CTECE1U-NU-MS",
+      "programCode": "CTECE1U",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn5IAB",
+      "name": "SR-6256",
+      "stateRestrictionCode": "CTECE2U-NU-MS",
+      "programCode": "CTECE2U",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn6IAB",
+      "name": "SR-6257",
+      "stateRestrictionCode": "CTECE3U-NU-MS",
+      "programCode": "CTECE3U",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn7IAB",
+      "name": "SR-6258",
+      "stateRestrictionCode": "CTECE4U-NU-MS",
+      "programCode": "CTECE4U",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn8IAB",
+      "name": "SR-6259",
+      "stateRestrictionCode": "CTECE5U-NU-MS",
+      "programCode": "CTECE5U",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyn9IAB",
+      "name": "SR-6260",
+      "stateRestrictionCode": "CTPLACLAWU-NU-MS",
+      "programCode": "CTPLACLAWU",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynAIAR",
+      "name": "SR-6261",
+      "stateRestrictionCode": "CTPLACORPU-NU-MS",
+      "programCode": "CTPLACORPU",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynBIAR",
+      "name": "SR-6262",
+      "stateRestrictionCode": "MACC-NU-MS",
+      "programCode": "MACC",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynCIAR",
+      "name": "SR-6263",
+      "stateRestrictionCode": "MACTS-NU-MS",
+      "programCode": "MACTS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynDIAR",
+      "name": "SR-6264",
+      "stateRestrictionCode": "MAENG-NU-MS",
+      "programCode": "MAENG",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynEIAR",
+      "name": "SR-6265",
+      "stateRestrictionCode": "MAHUB-NU-MS",
+      "programCode": "MAHUB",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynFIAR",
+      "name": "SR-6266",
+      "stateRestrictionCode": "MASPPAMP-NU-MS",
+      "programCode": "MASPPAMP",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynGIAR",
+      "name": "SR-6267",
+      "stateRestrictionCode": "MASPPTMP-NU-MS",
+      "programCode": "MASPPTMP",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynHIAR",
+      "name": "SR-6268",
+      "stateRestrictionCode": "MBAD-NU-MS",
+      "programCode": "MBAD",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynIIAR",
+      "name": "SR-6269",
+      "stateRestrictionCode": "MBAD1-NU-MS",
+      "programCode": "MBAD1",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynJIAR",
+      "name": "SR-6270",
+      "stateRestrictionCode": "MBAD2-NU-MS",
+      "programCode": "MBAD2",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynKIAR",
+      "name": "SR-6271",
+      "stateRestrictionCode": "MBAD3-NU-MS",
+      "programCode": "MBAD3",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynLIAR",
+      "name": "SR-6272",
+      "stateRestrictionCode": "MCJL-NU-MS",
+      "programCode": "MCJL",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynMIAR",
+      "name": "SR-6273",
+      "stateRestrictionCode": "MCJL1-NU-MS",
+      "programCode": "MCJL1",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdywXIAR",
+      "name": "SR-6378",
+      "stateRestrictionCode": "MFS-NU-MS",
+      "programCode": "MFS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynOIAR",
+      "name": "SR-6275",
+      "stateRestrictionCode": "MNBUSADM-NU-MS",
+      "programCode": "MNBUSADM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynQIAR",
+      "name": "SR-6277",
+      "stateRestrictionCode": "MPA-NU-MS",
+      "programCode": "MPA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynRIAR",
+      "name": "SR-6278",
+      "stateRestrictionCode": "MSCS-NU-MS",
+      "programCode": "MSCS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynSIAR",
+      "name": "SR-6279",
+      "stateRestrictionCode": "MSHSEM-NU-MS",
+      "programCode": "MSHSEM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynTIAR",
+      "name": "SR-6280",
+      "stateRestrictionCode": "MSMKT-NU-MS",
+      "programCode": "MSMKT",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynUIAR",
+      "name": "SR-6281",
+      "stateRestrictionCode": "BSPHLTH-NU-MS",
+      "programCode": "BSPHLTH",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynVIAR",
+      "name": "SR-6282",
+      "stateRestrictionCode": "CTAIMLG0-NU-MS",
+      "programCode": "CTAIMLG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynWIAR",
+      "name": "SR-6283",
+      "stateRestrictionCode": "CTCTSG0-NU-MS",
+      "programCode": "CTCTSG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynYIAR",
+      "name": "SR-6285",
+      "stateRestrictionCode": "CTPLALITU-NU-MS",
+      "programCode": "CTPLALITU",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynaIAB",
+      "name": "SR-6287",
+      "stateRestrictionCode": "MACC1-NU-MS",
+      "programCode": "MACC1",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynbIAB",
+      "name": "SR-6288",
+      "stateRestrictionCode": "MACTS1-NU-MS",
+      "programCode": "MACTS1",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyncIAB",
+      "name": "SR-6289",
+      "stateRestrictionCode": "MAHRM-NU-MS",
+      "programCode": "MAHRM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyndIAB",
+      "name": "SR-6290",
+      "stateRestrictionCode": "MASCOM-NU-MS",
+      "programCode": "MASCOM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyneIAB",
+      "name": "SR-6291",
+      "stateRestrictionCode": "MASEL-NU-MS",
+      "programCode": "MASEL",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynfIAB",
+      "name": "SR-6292",
+      "stateRestrictionCode": "MCJL2-NU-MS",
+      "programCode": "MCJL2",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyngIAB",
+      "name": "SR-6293",
+      "stateRestrictionCode": "MECE-NU-MS",
+      "programCode": "MECE",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynhIAB",
+      "name": "SR-6294",
+      "stateRestrictionCode": "MHCA-NU-MS",
+      "programCode": "MHCA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyniIAB",
+      "name": "SR-6295",
+      "stateRestrictionCode": "MNACC-NU-MS",
+      "programCode": "MNACC",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynjIAB",
+      "name": "SR-6296",
+      "stateRestrictionCode": "MNBLAW-NU-MS",
+      "programCode": "MNBLAW",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynkIAB",
+      "name": "SR-6297",
+      "stateRestrictionCode": "MNBUSSTD-NU-MS",
+      "programCode": "MNBUSSTD",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynlIAB",
+      "name": "SR-6298",
+      "stateRestrictionCode": "MNCJA-NU-MS",
+      "programCode": "MNCJA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynmIAB",
+      "name": "SR-6299",
+      "stateRestrictionCode": "MNCOM-NU-MS",
+      "programCode": "MNCOM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynnIAB",
+      "name": "SR-6300",
+      "stateRestrictionCode": "MNCW-NU-MS",
+      "programCode": "MNCW",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynoIAB",
+      "name": "SR-6301",
+      "stateRestrictionCode": "MNECO-NU-MS",
+      "programCode": "MNECO",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynpIAB",
+      "name": "SR-6302",
+      "stateRestrictionCode": "MNENG-NU-MS",
+      "programCode": "MNENG",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynqIAB",
+      "name": "SR-6303",
+      "stateRestrictionCode": "MNGLS-NU-MS",
+      "programCode": "MNGLS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynrIAB",
+      "name": "SR-6304",
+      "stateRestrictionCode": "MNHONFEL-NU-MS",
+      "programCode": "MNHONFEL",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynsIAB",
+      "name": "SR-6305",
+      "stateRestrictionCode": "MNPSY-NU-MS",
+      "programCode": "MNPSY",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyntIAB",
+      "name": "SR-6306",
+      "stateRestrictionCode": "MNSOC-NU-MS",
+      "programCode": "MNSOC",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynuIAB",
+      "name": "SR-6307",
+      "stateRestrictionCode": "MPH-NU-MS",
+      "programCode": "MPH",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynvIAB",
+      "name": "SR-6308",
+      "stateRestrictionCode": "MSCYB-NU-MS",
+      "programCode": "MSCYB",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynwIAB",
+      "name": "SR-6309",
+      "stateRestrictionCode": "MSDANA-NU-MS",
+      "programCode": "MSDANA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynxIAB",
+      "name": "SR-6310",
+      "stateRestrictionCode": "MSDIET-NU-MS",
+      "programCode": "MSDIET",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynyIAB",
+      "name": "SR-6311",
+      "stateRestrictionCode": "MSENM-NU-MS",
+      "programCode": "MSENM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdynzIAB",
+      "name": "SR-6312",
+      "stateRestrictionCode": "MSOLED-NU-MS",
+      "programCode": "MSOLED",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo0IAB",
+      "name": "SR-6313",
+      "stateRestrictionCode": "NONBEG0-NU-MS",
+      "programCode": "NONBEG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo1IAB",
+      "name": "SR-6314",
+      "stateRestrictionCode": "NONBEU0-NU-MS",
+      "programCode": "NONBEU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo2IAB",
+      "name": "SR-6315",
+      "stateRestrictionCode": "NONEDU0-NU-MS",
+      "programCode": "NONEDU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo3IAB",
+      "name": "SR-6316",
+      "stateRestrictionCode": "NONHLSU0-NU-MS",
+      "programCode": "NONHLSU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo4IAB",
+      "name": "SR-6317",
+      "stateRestrictionCode": "NONHSD0-NU-MS",
+      "programCode": "NONHSD0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo5IAB",
+      "name": "SR-6318",
+      "stateRestrictionCode": "NONHSG0-NU-MS",
+      "programCode": "NONHSG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo6IAB",
+      "name": "SR-6319",
+      "stateRestrictionCode": "NONHSU0-NU-MS",
+      "programCode": "NONHSU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo7IAB",
+      "name": "SR-6320",
+      "stateRestrictionCode": "NONJPD0-NU-MS",
+      "programCode": "NONJPD0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo8IAB",
+      "name": "SR-6321",
+      "stateRestrictionCode": "NONJPG0-NU-MS",
+      "programCode": "NONJPG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyo9IAB",
+      "name": "SR-6322",
+      "stateRestrictionCode": "NONJPU0-NU-MS",
+      "programCode": "NONJPU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoAIAR",
+      "name": "SR-6323",
+      "stateRestrictionCode": "NONLSG0-NU-MS",
+      "programCode": "NONLSG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoBIAR",
+      "name": "SR-6324",
+      "stateRestrictionCode": "NONLSU0-NU-MS",
+      "programCode": "NONLSU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoCIAR",
+      "name": "SR-6325",
+      "stateRestrictionCode": "NONPSD0-NU-MS",
+      "programCode": "NONPSD0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoDIAR",
+      "name": "SR-6326",
+      "stateRestrictionCode": "NONPSG0-NU-MS",
+      "programCode": "NONPSG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoEIAR",
+      "name": "SR-6327",
+      "stateRestrictionCode": "NONPSU0-NU-MS",
+      "programCode": "NONPSU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoFIAR",
+      "name": "SR-6328",
+      "stateRestrictionCode": "NONTED0-NU-MS",
+      "programCode": "NONTED0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoGIAR",
+      "name": "SR-6329",
+      "stateRestrictionCode": "NONTEG0-NU-MS",
+      "programCode": "NONTEG0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoHIAR",
+      "name": "SR-6330",
+      "stateRestrictionCode": "NONTEU0-NU-MS",
+      "programCode": "NONTEU0",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoTIAR",
+      "name": "SR-6342",
+      "stateRestrictionCode": "MACC1-NU-OR",
+      "programCode": "MACC1",
+      "orgId": "NU",
+      "state": "OR",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoVIAR",
+      "name": "SR-6344",
+      "stateRestrictionCode": "ASBUS-NU-MS",
+      "programCode": "ASBUS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoWIAR",
+      "name": "SR-6345",
+      "stateRestrictionCode": "ASGEN-NU-MS",
+      "programCode": "ASGEN",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoXIAR",
+      "name": "SR-6346",
+      "stateRestrictionCode": "BADMD-NU-MS",
+      "programCode": "BADMD",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoYIAR",
+      "name": "SR-6347",
+      "stateRestrictionCode": "BAECE-NU-MS",
+      "programCode": "BAECE",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoZIAR",
+      "name": "SR-6348",
+      "stateRestrictionCode": "BAENG-NU-MS",
+      "programCode": "BAENG",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoaIAB",
+      "name": "SR-6349",
+      "stateRestrictionCode": "BAGS-NU-MS",
+      "programCode": "BAGS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyobIAB",
+      "name": "SR-6350",
+      "stateRestrictionCode": "BAHIS-NU-MS",
+      "programCode": "BAHIS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyocIAB",
+      "name": "SR-6351",
+      "stateRestrictionCode": "BAIMC-NU-MS",
+      "programCode": "BAIMC",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoeIAB",
+      "name": "SR-6353",
+      "stateRestrictionCode": "BAISE-NU-MS",
+      "programCode": "BAISE",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyofIAB",
+      "name": "SR-6354",
+      "stateRestrictionCode": "BAMGT-NU-MS",
+      "programCode": "BAMGT",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyogIAB",
+      "name": "SR-6355",
+      "stateRestrictionCode": "BAPLAWSTD-NU-MS",
+      "programCode": "BAPLAWSTD",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyohIAB",
+      "name": "SR-6356",
+      "stateRestrictionCode": "BAPSY-NU-MS",
+      "programCode": "BAPSY",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoiIAB",
+      "name": "SR-6357",
+      "stateRestrictionCode": "BASPSY-NU-MS",
+      "programCode": "BASPSY",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyojIAB",
+      "name": "SR-6358",
+      "stateRestrictionCode": "BBA-NU-MS",
+      "programCode": "BBA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyokIAB",
+      "name": "SR-6359",
+      "stateRestrictionCode": "BBA2-NU-MS",
+      "programCode": "BBA3",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyolIAB",
+      "name": "SR-6360",
+      "stateRestrictionCode": "BPA-NU-MS",
+      "programCode": "BPA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyomIAB",
+      "name": "SR-6361",
+      "stateRestrictionCode": "BSACC-NU-MS",
+      "programCode": "BSACC",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyonIAB",
+      "name": "SR-6362",
+      "stateRestrictionCode": "BSALDHLTH-NU-MS",
+      "programCode": "BSALDHLTH",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyooIAB",
+      "name": "SR-6363",
+      "stateRestrictionCode": "BSCEE-NU-MS",
+      "programCode": "BSCEE",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyopIAB",
+      "name": "SR-6364",
+      "stateRestrictionCode": "BSCONMGT-NU-MS",
+      "programCode": "BSCONMGT",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoqIAB",
+      "name": "SR-6365",
+      "stateRestrictionCode": "BSCS-NU-MS",
+      "programCode": "BSCS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyorIAB",
+      "name": "SR-6366",
+      "stateRestrictionCode": "BSCYB-NU-MS",
+      "programCode": "BSCYB",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyosIAB",
+      "name": "SR-6367",
+      "stateRestrictionCode": "BSDS-NU-MS",
+      "programCode": "BSDS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyotIAB",
+      "name": "SR-6368",
+      "stateRestrictionCode": "BSFINMGT-NU-MS",
+      "programCode": "BSFINMGT",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyouIAB",
+      "name": "SR-6369",
+      "stateRestrictionCode": "BSHCA-NU-MS",
+      "programCode": "BSHCA",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyovIAB",
+      "name": "SR-6370",
+      "stateRestrictionCode": "BSHRM-NU-MS",
+      "programCode": "BSHRM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyowIAB",
+      "name": "SR-6371",
+      "stateRestrictionCode": "BSHSEM-NU-MS",
+      "programCode": "BSHSEM",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoxIAB",
+      "name": "SR-6372",
+      "stateRestrictionCode": "BSIS-NU-MS",
+      "programCode": "BSIS",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyoyIAB",
+      "name": "SR-6373",
+      "stateRestrictionCode": "BSMATH-NU-MS",
+      "programCode": "BSMATH",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000FdyozIAB",
+      "name": "SR-6374",
+      "stateRestrictionCode": "BSMDE-NU-MS",
+      "programCode": "BSMDE",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyp0IAB",
+      "name": "SR-6375",
+      "stateRestrictionCode": "BSMKT-NU-MS",
+      "programCode": "BSMKT",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyp1IAB",
+      "name": "SR-6376",
+      "stateRestrictionCode": "BASOC-NU-MS",
+      "programCode": "BASOC",
+      "orgId": "NU",
+      "state": "MS",
+      "details": "Restrict New Enrollment",
+      "active": true,
+      "programType": "Program"
+    },
+    {
+      "id": "a3aVy00000Fdyp2IAB",
+      "name": "SR-6377",
+      "stateRestrictionCode": "BSOLED-NU-MI",
+      "programCode": "BSOLED",
+      "orgId": "NU",
+      "state": "MI",
       "details": "Restrict New Enrollment",
       "active": true,
       "programType": "Program"
