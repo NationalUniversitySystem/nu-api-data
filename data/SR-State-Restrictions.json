@@ -37180,17 +37180,6 @@
       "programType": "Program"
     },
     {
-      "id": "a3aVy0000004zUiIAI",
-      "name": "SR-3299",
-      "stateRestrictionCode": "MACPSYC-NU-CA",
-      "programCode": "MACPSYC",
-      "orgId": "NU",
-      "state": "CA",
-      "details": "Restrict New Enrollment",
-      "active": true,
-      "programType": "Program"
-    },
-    {
       "id": "a3aVy0000004zUjIAI",
       "name": "SR-3300",
       "stateRestrictionCode": "MACPSYC-NU-CO",
