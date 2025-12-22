@@ -206,19 +206,29 @@ app.get('/nu-api/programs', async (req, res) => {
                 spec.AdditionalStateLevelTuition = specTuitionData;
             });
 
-            const sparkCode = normalize(p.SparkroomCode);
+            const nuCode  = normalize(p.NUProgramCode);
+            const ncuCode = normalize(p.NCUProgramCode);
+
 
             // ---- SR-State-Restrictions only ----
-            const srMatches = srStateRestrictions
-                .filter(r => {
-                    const rCode = normalize(r.programCode);
-                    if (!rCode) return false;
+            const srMatches =
+                (p.RFIHide === true || p.AppHide === true)
+                    ? [] // 🚫 Do not apply state restrictions to hidden programs
+                    : srStateRestrictions
+                        .filter(r => {
+                            const rCode = normalize(r.programCode);
+                            if (!rCode) return false;
 
-                    // ✅ Exact match only (case-insensitive)
-                    return rCode === sparkCode;
-                })
-                .map(r => r.state)
-                .filter(Boolean);
+                            // ✅ Match NUProgramCode first, then NCUProgramCode
+                            return (
+                                (nuCode && rCode === nuCode) ||
+                                (ncuCode && rCode === ncuCode)
+                            );
+                        })
+                        .map(r => r.state)
+                        .filter(Boolean);
+
+
 
 
             return {
