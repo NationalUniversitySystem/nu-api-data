@@ -12106,7 +12106,7 @@
     {
         "TuitionID": 714,
         "ProgramID": 333,
-        "CreditsRequired": 186.00,
+        "CreditsRequired": 180.00,
         "CoursesRequired": 42,
         "CostPerCredit": 348,
         "CostPerCourse": 1566,
