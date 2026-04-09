@@ -13887,5 +13887,22 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null
+    },
+    {
+        "TuitionID": 822,
+        "ProgramID": 433,
+        "CreditsRequired": 0.00,
+        "CoursesRequired": 0,
+        "CostPerCredit": 0,
+        "CostPerCourse": 0,
+        "TuitionCost": 850,
+        "LMF": 0,
+        "CMF": 0,
+        "TotalProgramCost": 850,
+        "State": null,
+        "Specialization": null,
+        "Subscription": false,
+        "MaxTrsfrCredits": 0,
+        "EffectiveDate": null
     }
 ]
