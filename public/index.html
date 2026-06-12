@@ -440,7 +440,7 @@
       const stateLevelTuition = tuition.StateLevelTuition || [];
       delete tuition.StateLevelTuition;
 
-      ['CostPerCredit', 'CostPerCourse', 'TuitionCost', 'LMF', 'CMF', 'TotalProgramCost', 'tuitionHide'].forEach(key => {
+      ['CostPerCredit', 'CostPerCourse', 'TuitionCost', 'LMF', 'CMF', 'TotalProgramCost', 'TuitionHide'].forEach(key => {
         if (tuition[key]) tuition[key] = formatCurrency(tuition[key]);
       });
 
@@ -459,7 +459,7 @@
             <td>${formatCurrency(t.CMF)}</td>
             <td>${formatCurrency(t.TotalProgramCost)}</td>
             <td>${t.Subscription}</td>
-             <td>${t.tuitionHide}</td>
+             <td>${t.TuitionHide}</td>
           </tr>
         `).join('');
 
@@ -478,7 +478,7 @@
                 <th>CMF</th>
                 <th>TotalProgramCost</th>
                 <th>Subscription</th>
-                <th>tuitionHide</th>
+                <th>TuitionHide</th>
               </tr>
             </thead>
             <tbody>${stateTableRows}</tbody>
@@ -519,7 +519,7 @@ document.getElementById('spec-info').innerHTML = specs.length
                     <th>CMF</th>
                     <th>TotalProgramCost</th>
                     <th>Subscription</th>
-                    <th>tuitionHide</th>
+                    <th>TuitionHide</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -535,7 +535,7 @@ document.getElementById('spec-info').innerHTML = specs.length
                       <td>${formatCurrency(t.CMF)}</td>
                       <td>${formatCurrency(t.TotalProgramCost)}</td>
                       <td>${t.Subscription}</td>
-                      <td>${t.tuitionHide}</td>
+                      <td>${t.TuitionHide}</td>
                     </tr>
                   `).join('')}
                 </tbody>

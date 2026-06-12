@@ -266,7 +266,7 @@ app.get('/nu-api/programs', async (req, res) => {
                     CMF: tuition.CMF || 0,
                     TotalProgramCost: tuition.TotalProgramCost || 0,
                     Subscription: tuition.Subscription || false,
-                    tuitionHide: tuition.tuitionHide ?? 0,
+                    TuitionHide: tuition.TuitionHide ?? 0,
                     StateLevelTuition: programStateTuitions
                 },
                 StateRestrictions: srMatches,
