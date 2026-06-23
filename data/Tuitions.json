@@ -12237,7 +12237,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 698,
@@ -12885,7 +12885,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 736,
@@ -12903,7 +12903,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 737,
@@ -13245,7 +13245,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 756,
@@ -13263,7 +13263,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 757,
@@ -13281,7 +13281,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 758,
@@ -13299,7 +13299,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 759,
@@ -13317,7 +13317,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 760,
@@ -13335,7 +13335,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 761,
@@ -13353,7 +13353,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 762,
@@ -13371,7 +13371,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 763,
@@ -13389,7 +13389,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 764,
@@ -13407,7 +13407,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 765,
@@ -13425,7 +13425,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 766,
@@ -13677,7 +13677,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 780,
@@ -13695,7 +13695,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 781,
@@ -13713,7 +13713,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 782,
@@ -13731,7 +13731,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 783,
@@ -13749,7 +13749,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 784,
@@ -13803,7 +13803,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 787,
@@ -13821,7 +13821,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 788,
@@ -13839,7 +13839,7 @@
         "Subscription": true,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 789,
@@ -14091,7 +14091,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 803,
@@ -14109,7 +14109,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 804,
@@ -14127,7 +14127,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 805,
@@ -14145,7 +14145,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 806,
@@ -14163,7 +14163,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 807,
@@ -14181,7 +14181,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 808,
@@ -14199,7 +14199,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 809,
@@ -14217,7 +14217,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 810,
@@ -14235,7 +14235,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 811,
@@ -14253,7 +14253,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 812,
@@ -14271,7 +14271,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 813,
@@ -14433,7 +14433,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 823,
@@ -14595,7 +14595,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 832,
@@ -14613,7 +14613,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 833,
@@ -14631,7 +14631,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 834,
@@ -14649,7 +14649,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 835,
@@ -14667,7 +14667,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 836,
@@ -14685,7 +14685,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 837,
@@ -14703,7 +14703,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 838,
@@ -14721,7 +14721,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 839,
@@ -14739,7 +14739,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 840,
@@ -14757,7 +14757,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 841,
@@ -14775,7 +14775,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 842,
@@ -14793,7 +14793,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 843,
@@ -14811,7 +14811,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 844,
@@ -14829,7 +14829,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 845,
@@ -14847,7 +14847,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 846,
@@ -14865,7 +14865,7 @@
         "Subscription": false,
         "MaxTrsfrCredits": 0,
         "EffectiveDate": null,
-        "TuitionHide": 0
+        "TuitionHide": 1
     },
     {
         "TuitionID": 847,
