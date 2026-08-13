@@ -1320,36 +1320,6 @@
         "ModifiedDatetime": null
     },
     {
-        "specializationID": 148,
-        "programID": 28,
-        "specialization": "Corporate Wellness",
-        "routingTo": "NCU",
-        "routingStartDate": "September, 13 2022 00:00:00",
-        "sparkroomCode": "CWMED",
-        "spanishTitle": null,
-        "AppHide": false,
-        "RFIHide": false,
-        "CreatedBy": "022793537",
-        "CreatedDatetime": "September, 28 2022 09:00:00",
-        "ModifiedBy": null,
-        "ModifiedDatetime": null
-    },
-    {
-        "specializationID": 161,
-        "programID": 28,
-        "specialization": "Social Emotional Learning",
-        "routingTo": "NCU",
-        "routingStartDate": "September, 13 2022 00:00:00",
-        "sparkroomCode": "SELMED",
-        "spanishTitle": null,
-        "AppHide": false,
-        "RFIHide": false,
-        "CreatedBy": "022793537",
-        "CreatedDatetime": "September, 28 2022 09:00:00",
-        "ModifiedBy": null,
-        "ModifiedDatetime": null
-    },
-    {
         "specializationID": 166,
         "programID": 55,
         "specialization": "Dissertation Completion Pathway",
